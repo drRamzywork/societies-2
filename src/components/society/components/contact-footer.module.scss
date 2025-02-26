@@ -1,0 +1,220 @@
+/* .checkbox,
+.unchecked {
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+  transform: rotate(-180deg);
+}
+.checkbox {
+  margin: 0;
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+}
+.unchecked {
+  margin-left: -459px;
+  line-height: 24px;
+  transform: rotate(180deg);
+}
+.checkboxunchecked {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-414xl);
+  gap: var(--gap-base);
+  transform: rotate(180deg);
+  z-index: 1;
+}
+.go {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.buttonsbutton31 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-steelblue);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-12xs);
+}
+.buttonInstance,
+.buttonsbutton3,
+.buttonsbutton31 {
+  display: flex;
+  align-items: flex-start;
+}
+.buttonsbutton3 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.buttonInstance {
+  width: 144px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--w-background);
+}
+.contactFooter {
+  width: 457px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-20xl);
+  max-width: 100%;
+  text-align: right;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+  font-family: var(--font-cairo);
+}
+@media screen and (max-width: 1050px) {
+  .checkboxunchecked {
+    padding-left: var(--padding-197xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .checkboxunchecked {
+    padding-left: var(--padding-89xl);
+    box-sizing: border-box;
+  }
+  .go {
+    font-size: var(--font-size-base);
+    line-height: 19px;
+  }
+  .contactFooter {
+    gap: var(--gap-lgi);
+  }
+} */
+
+.checkbox,
+.unchecked {
+  position: relative;
+  flex-shrink: 0;
+  transform: rotate(-180deg);
+}
+
+.checkbox {
+  margin: 0;
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+}
+
+.unchecked {
+  margin-left: -459px;
+  line-height: 24px;
+  transform: rotate(180deg);
+}
+
+.checkboxunchecked {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-414xl);
+  gap: var(--gap-base);
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.go {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.buttonsbutton31 {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-steelblue);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-12xs);
+}
+
+.buttonInstance,
+.buttonsbutton3,
+.buttonsbutton31 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.buttonsbutton3 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.buttonInstance {
+  width: 144px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-12xs);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--w-background);
+}
+
+.contactFooter {
+  width: 457px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-20xl);
+  max-width: 100%;
+  text-align: right;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+  font-family: var(--font-cairo);
+}
+
+@media screen and (max-width: 1050px) {
+  .checkboxunchecked {
+    padding-left: var(--padding-197xl);
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .checkboxunchecked {
+    padding-left: var(--padding-89xl);
+    box-sizing: border-box;
+  }
+  .go {
+    font-size: var(--font-size-base);
+    line-height: 19px;
+  }
+  .contactFooter {
+    gap: var(--gap-lgi);
+  }
+}

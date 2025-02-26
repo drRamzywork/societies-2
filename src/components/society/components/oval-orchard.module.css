@@ -1,0 +1,136 @@
+.h2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 900;
+  font-family: inherit;
+}
+.pathwayPlanner {
+  width: 1256px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-4xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.h21 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: right;
+}
+.arrowLeftIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.alignAlchemist,
+.distributeDistributor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.distributeDistributor {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-smi);
+  background-color: var(--color-whitesmoke);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-xs);
+}
+.alignAlchemist {
+  flex-direction: column;
+  padding: var(--padding-85xl) 0 0;
+}
+.canvasCanvas,
+.canvasCanvasWrapper,
+.layerLayered {
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.layerLayered {
+  flex: 1;
+  display: grid;
+  justify-content: flex-start;
+  gap: var(--gap-38xl);
+  min-width: 779px;
+  grid-template-columns: repeat(4, minmax(193px, 1fr));
+}
+.canvasCanvas,
+.canvasCanvasWrapper {
+  display: flex;
+}
+.canvasCanvas {
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+}
+.canvasCanvasWrapper {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-10xl) 0 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+  color: var(--w-background);
+}
+.ovalOrchard,
+.pathwayPlannerParent {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.pathwayPlannerParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-mid);
+}
+.ovalOrchard {
+  width: 1395px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-28xl) var(--padding-5xs);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-cairo);
+}
+@media screen and (max-width: 1200px) {
+  .ovalOrchard {
+    padding-left: var(--padding-4xl);
+    padding-right: var(--padding-4xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .h2,
+  .h21 {
+    font-size: var(--font-size-7xl);
+  }
+  .layerLayered {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(193px, 334px));
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .layerLayered {
+    gap: var(--gap-9xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .h2,
+  .h21 {
+    font-size: var(--font-size-lgi);
+  }
+  .layerLayered {
+    grid-template-columns: minmax(193px, 1fr);
+  }
+}

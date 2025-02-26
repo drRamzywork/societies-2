@@ -1,0 +1,414 @@
+.fotterChild {
+  height: 325px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-gray-300);
+  display: none;
+  max-width: 100%;
+}
+.div {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 117px;
+  z-index: 1;
+}
+.wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-2xl);
+  font-size: var(--font-size-5xl);
+}
+.frameChild {
+  height: 41px;
+  width: 334px;
+  position: relative;
+  border-radius: var(--br-6xs);
+  background-color: var(--w-background);
+  display: none;
+  max-width: 100%;
+}
+.div1 {
+  width: 114.6px;
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frameItem,
+.rectangleParent {
+  background-color: var(--w-background);
+  align-self: stretch;
+  border-radius: var(--br-6xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  color: var(--color-gray-100);
+  z-index: 1;
+}
+.rectangleParent {
+  padding: var(--padding-9xs) var(--padding-sm-1) var(--padding-6xs);
+  white-space: nowrap;
+  max-width: 100%;
+}
+.frameItem {
+  border: 0;
+  height: 82px;
+  width: auto;
+  outline: 0;
+  padding: var(--padding-9xs) var(--padding-sm-1);
+  font-family: var(--font-cairo);
+  font-size: var(--font-size-base);
+}
+.b,
+.frameInner {
+  position: relative;
+}
+.frameInner {
+  height: 35px;
+  width: 98px;
+  border-radius: var(--br-4xs);
+  background-color: var(--w-background);
+  display: none;
+}
+.b {
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  display: inline-block;
+  min-width: 43px;
+  z-index: 2;
+}
+.frameWrapper,
+.rectangleGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.rectangleGroup {
+  border-radius: var(--br-4xs);
+  background-color: var(--w-background);
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xl) var(--padding-8xs) var(--padding-9xl);
+  z-index: 1;
+}
+.frameWrapper {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  color: var(--color-gray-300);
+}
+.fotterInner,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-base-7);
+}
+.fotterInner {
+  width: 334px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-xs-4);
+  box-sizing: border-box;
+  font-size: var(--font-size-base);
+}
+.p,
+.p1 {
+  margin: 0;
+}
+.p1 {
+  white-space: pre-wrap;
+}
+.div2 {
+  position: absolute;
+  top: 128.3px;
+  left: 0;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  font-weight: 500;
+  z-index: 1;
+}
+.logo1Icon {
+  height: 102.3px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.logo1Wrapper {
+  position: absolute;
+  top: 0;
+  left: 79px;
+  width: 122px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm-1) var(--padding-smi) var(--padding-sm-1)
+    var(--padding-sm-1);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.parent {
+  align-self: stretch;
+  height: 188.3px;
+  position: relative;
+}
+.facebookIcon,
+.twitterIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  min-height: 36px;
+  z-index: 1;
+}
+.snapchatIcon {
+  object-fit: cover;
+}
+.snapchatIcon,
+.youtubeIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  min-height: 36px;
+  z-index: 1;
+}
+.facebookParent,
+.frameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.facebookParent {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameContainer {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl) 0 var(--padding-4xl);
+}
+.frameGroup {
+  width: 332px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 var(--padding-34xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-19xl-4);
+  max-width: 100%;
+  font-family: var(--font-reem-kufi);
+}
+.instagramIcon {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  display: none;
+}
+.b1 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) 0 0;
+}
+.devicesIcon {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  z-index: 1;
+}
+.frameParent3,
+.frameWrapper1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent3 {
+  flex: 1;
+  gap: var(--gap-3xs);
+}
+.frameWrapper1 {
+  align-self: stretch;
+  padding: 0 var(--padding-27xl);
+}
+.div3 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  font-weight: 500;
+  z-index: 1;
+}
+.frameParent2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.b2 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  z-index: 1;
+}
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) 0 0;
+}
+.communicationIcon {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.frameParent5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.silimilongmailcom {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 30px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 1;
+}
+.routingHub {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xs) 0 var(--padding-7xs);
+}
+.frameParent4 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.frameParent1,
+.frameWrapper2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper2 {
+  flex-direction: row;
+  padding: 0 var(--padding-15xl) 0 var(--padding-14xl);
+}
+.frameParent1 {
+  flex-direction: column;
+  gap: var(--gap-smi);
+}
+.fotter,
+.frameDiv {
+  display: flex;
+  box-sizing: border-box;
+}
+.frameDiv {
+  width: 295px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-9xl-4);
+}
+.fotter {
+  align-self: stretch;
+  background-color: var(--color-gray-300);
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-smi-7) var(--padding-52xl) var(--padding-30xl-6)
+    var(--padding-65xl);
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--w-background);
+  font-family: var(--font-cairo);
+}
+@media screen and (max-width: 1200px) {
+  .fotter {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .fotter {
+    padding-left: var(--padding-23xl);
+    padding-right: var(--padding-16xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .div,
+  .div2 {
+    font-size: var(--font-size-lgi);
+    line-height: 24px;
+  }
+  .frameGroup {
+    gap: var(--gap-lgi);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .b1 {
+    font-size: var(--font-size-lgi);
+    line-height: 24px;
+  }
+  .frameWrapper1 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .b2,
+  .div3,
+  .silimilongmailcom {
+    font-size: var(--font-size-lgi);
+    line-height: 24px;
+  }
+  .fotter {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

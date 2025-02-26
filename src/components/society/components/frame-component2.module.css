@@ -1,0 +1,111 @@
+.div,
+.frameChild {
+  position: relative;
+  max-width: 100%;
+}
+.frameChild {
+  width: 356px;
+  border-radius: var(--br-sm);
+  max-height: 100%;
+  object-fit: cover;
+}
+.div {
+  width: 816px;
+  font-weight: 600;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.frameGroup,
+.wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameGroup {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-xl);
+}
+.div1 {
+  width: 816px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+}
+.frameContainer,
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-7xl);
+}
+.frameContainer {
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-6xl);
+  box-sizing: border-box;
+  min-width: 562px;
+}
+.frameWrapper,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.rectangleParent {
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-45xl);
+  flex-shrink: 0;
+}
+.frameWrapper {
+  width: 1410px;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-44xl) var(--padding-11xl-3);
+  box-sizing: border-box;
+  text-align: right;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-cairo);
+}
+@media screen and (max-width: 1200px) {
+  .frameChild {
+    flex: 1;
+  }
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+  .frameWrapper {
+    padding-left: var(--padding-12xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameContainer {
+    min-width: 100%;
+  }
+  .rectangleParent {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .div,
+  .div1 {
+    font-size: var(--font-size-lgi);
+  }
+  .rectangleParent {
+    gap: var(--gap-base);
+  }
+}

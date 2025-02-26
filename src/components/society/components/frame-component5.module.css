@@ -1,0 +1,90 @@
+.slidesBoxIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+}
+.arrowLeftIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.clickArea {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+}
+.dotIndictaor1 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+}
+.dotIndictaor2,
+.dotIndictaor3,
+.dotIndictaor4,
+.dotIndictaor5 {
+  height: 12px;
+  width: 12px;
+  position: relative;
+}
+.slideIndicator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  gap: var(--gap-3xs);
+}
+.arrowRightIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.clickArea1,
+.slidesNavigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+}
+.slidesNavigation {
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.carousel,
+.carouselWrapper {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.carousel {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-21xl) var(--padding-6xl) var(--padding-base);
+  gap: var(--gap-5xl);
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+  z-index: 2;
+}
+.carouselWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-7xs);
+  margin-top: -12px;
+}
+@media screen and (max-width: 750px) {
+  .carousel {
+    padding-top: var(--padding-13xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

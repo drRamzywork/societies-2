@@ -1,0 +1,353 @@
+.div,
+.newsbarChild {
+  position: relative;
+  max-width: 100%;
+}
+.newsbarChild {
+  height: 86px;
+  width: 1440px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.34);
+  background-color: var(--color-whitesmoke);
+  display: none;
+}
+.div {
+  flex: 1;
+  display: inline-block;
+  min-width: 231px;
+}
+.frameChild {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.ellipseWrapper,
+.parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipseWrapper {
+  flex-direction: column;
+  padding: var(--padding-3xl) 0 0;
+}
+.parent {
+  width: 384px;
+  flex-shrink: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-mini);
+  max-width: 100%;
+}
+.div1 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 231px;
+  max-width: 100%;
+}
+.frameItem {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.ellipseContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xl) 0 0;
+}
+.div2,
+.group {
+  max-width: 100%;
+}
+.group {
+  width: 384px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.div2 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 231px;
+}
+.frameInner {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.container,
+.ellipseFrame {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ellipseFrame {
+  flex-direction: column;
+  padding: var(--padding-3xl) 0 0;
+}
+.container {
+  width: 384px;
+  flex-shrink: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-mini);
+  max-width: 100%;
+}
+.ellipseDiv {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 7px);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.div3,
+.ellipseParent {
+  position: relative;
+  max-width: 100%;
+}
+.div3 {
+  flex: 1;
+  display: inline-block;
+}
+.ellipseParent {
+  width: 384px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl) 0 0;
+  box-sizing: border-box;
+}
+.frameChild1 {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 7px);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.div4,
+.ellipseGroup {
+  position: relative;
+  max-width: 100%;
+}
+.div4 {
+  height: 58px;
+  flex: 1;
+  display: inline-block;
+}
+.ellipseGroup {
+  width: 384px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl) 0 0;
+  box-sizing: border-box;
+}
+.frameChild2 {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 7px);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.div5,
+.groupDiv {
+  position: relative;
+  max-width: 100%;
+}
+.div5 {
+  height: 58px;
+  flex: 1;
+  display: inline-block;
+}
+.groupDiv {
+  width: 384px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl) 0 0;
+  box-sizing: border-box;
+}
+.frameChild3 {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 7px);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.div6,
+.ellipseParent1 {
+  position: relative;
+  max-width: 100%;
+}
+.div6 {
+  height: 58px;
+  flex: 1;
+  display: inline-block;
+}
+.ellipseParent1 {
+  width: 384px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl) 0 0;
+  box-sizing: border-box;
+}
+.frameChild4 {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 7px);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.div7,
+.ellipseParent2 {
+  position: relative;
+  max-width: 100%;
+}
+.div7 {
+  height: 58px;
+  flex: 1;
+  display: inline-block;
+}
+.ellipseParent2 {
+  width: 384px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl) 0 0;
+  box-sizing: border-box;
+}
+.frameChild5 {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 7px);
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.div8 {
+  height: 58px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.ellipseParent3 {
+  width: 384px;
+  flex-shrink: 0;
+  padding: 0 var(--padding-10xl) 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.component1,
+.ellipseParent3,
+.frameParent,
+.newsbar {
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%; */
+}
+.frameParent {
+  /* width: 1421px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  gap: var(--gap-15xl);
+  debug_commit: 1de1738; */
+}
+.component1,
+.newsbar {
+  box-sizing: border-box;
+}
+.component1 {
+  flex: 1;
+  overflow: hidden;
+  padding: var(--padding-3xs) var(--padding-4xs) var(--padding-3xs)
+    var(--padding-3xs);
+  z-index: 1;
+}
+.newsbar {
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.34);
+  background-color: var(--color-whitesmoke);
+  padding: var(--padding-11xs) 0 var(--padding-7xs) var(--padding-4xs);
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+  margin-top: -12px;
+  text-align: right;
+  font-size: var(--font-size-21xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-lateef);
+}
+@media screen and (max-width: 1050px) {
+  .div,
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8 {
+    font-size: var(--font-size-13xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: var(--gap-mid);
+  }
+}
+@media screen and (max-width: 450px) {
+  .div,
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6,
+  .div7,
+  .div8 {
+    font-size: var(--font-size-5xl);
+  }
+}

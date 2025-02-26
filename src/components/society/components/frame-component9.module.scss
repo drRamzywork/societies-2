@@ -1,0 +1,162 @@
+// .b,
+// .inputField {
+//   align-self: stretch;
+// }
+// .b {
+//   height: 28px;
+//   position: relative;
+//   display: inline-block;
+//   transform: rotate(180deg);
+// }
+// .inputField {
+//   border: 0;
+//   background-color: transparent;
+//   height: 56px;
+//   font-family: var(--font-cairo);
+//   font-weight: 600;
+//   font-size: var(--font-size-base);
+//   color: var(--color-dimgray-200);
+// }
+// .textInputsinputRegular {
+//   width: 346px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   gap: var(--gap-9xs);
+//   transform: rotate(180deg);
+//   max-width: 100%;
+//   z-index: 1;
+// }
+// .b1,
+// .inputField1 {
+//   align-self: stretch;
+// }
+// .b1 {
+//   height: 28px;
+//   position: relative;
+//   display: inline-block;
+//   transform: rotate(180deg);
+// }
+// .inputField1 {
+//   border: 0;
+//   background-color: transparent;
+//   height: 56px;
+//   font-family: var(--font-cairo);
+//   font-weight: 600;
+//   font-size: var(--font-size-base);
+//   color: var(--color-dimgray-200);
+// }
+// .textInputsinputRegular1 {
+//   width: 346px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   gap: var(--gap-9xs);
+//   transform: rotate(180deg);
+//   max-width: 100%;
+//   z-index: 1;
+// }
+// .textInputsinputRegularParent {
+//   align-self: stretch;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   justify-content: space-between;
+//   max-width: 100%;
+//   gap: var(--gap-xl);
+//   text-align: right;
+//   font-size: var(--font-size-mini);
+//   color: var(--color-black);
+//   font-family: var(--font-cairo);
+// }
+// @media screen and (max-width: 1050px) {
+//   .textInputsinputRegularParent {
+//     flex-wrap: wrap;
+//   }
+// }
+
+.b,
+.inputField {
+  align-self: stretch;
+}
+
+.b {
+  height: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+.inputField {
+  border: 0;
+  background-color: transparent;
+  height: 56px;
+  font-family: var(--font-cairo);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+}
+
+.textInputsinputRegular {
+  width: 346px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+  z-index: 1;
+}
+
+.b1,
+.inputField1 {
+  align-self: stretch;
+}
+
+.b1 {
+  height: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+.inputField1 {
+  border: 0;
+  background-color: transparent;
+  height: 56px;
+  font-family: var(--font-cairo);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+}
+
+.textInputsinputRegular1 {
+  width: 346px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  max-width: 100%;
+  z-index: 1;
+}
+
+.textInputsinputRegularParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: right;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-cairo);
+}
+
+@media screen and (max-width: 1050px) {
+  .textInputsinputRegularParent {
+    flex-wrap: wrap;
+  }
+}

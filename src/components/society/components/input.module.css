@@ -1,0 +1,144 @@
+.b {
+  height: 28px;
+  position: relative;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.form {
+  align-self: stretch;
+  height: 56px;
+  font-family: var(--font-cairo);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+}
+.option {
+  position: relative;
+  font-weight: 800;
+}
+.dropdownItem,
+.textWrap {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.textWrap {
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dropdownItem {
+  height: 52px;
+  background-color: var(--w-background);
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+}
+.option1 {
+  position: relative;
+  font-weight: 800;
+}
+.dropdownItem1,
+.textWrap1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.textWrap1 {
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dropdownItem1 {
+  height: 52px;
+  background-color: var(--w-background);
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+}
+.option2 {
+  position: relative;
+  font-weight: 800;
+}
+.dropdownItem2,
+.textWrap2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.textWrap2 {
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dropdownItem2 {
+  height: 52px;
+  background-color: var(--w-background);
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+}
+.option3 {
+  position: relative;
+  font-weight: 800;
+}
+.dropdownItem3,
+.textWrap3 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.textWrap3 {
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dropdownItem3 {
+  height: 52px;
+  background-color: var(--w-background);
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 var(--padding-xs);
+  box-sizing: border-box;
+}
+.drowdownList,
+.input,
+.input1 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.drowdownList {
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  top: 77px;
+  left: 0;
+  box-shadow: var(--shadow);
+  border-radius: var(--br-5xs);
+  overflow: hidden;
+  display: none;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-base);
+}
+.input,
+.input1 {
+  align-self: stretch;
+  display: flex;
+}
+.input1 {
+  position: relative;
+  gap: var(--gap-9xs);
+}
+.input {
+  transform: rotate(180deg);
+  z-index: 1;
+  text-align: right;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-cairo);
+}

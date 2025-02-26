@@ -1,0 +1,58 @@
+/* .componentChild,
+.componentItem {
+  height: 65px;
+  width: 165px;
+}
+.componentInner {
+  height: 65px;
+  width: 199px;
+}
+.groupButton {
+  height: 65px;
+  width: 165px;
+}
+.frameParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+@media screen and (max-width: 1050px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+} */
+.componentChild,
+.componentItem {
+  height: 65px;
+  width: 165px;
+}
+
+.componentInner {
+  height: 65px;
+  width: 199px;
+}
+
+.groupButton {
+  height: 65px;
+  width: 165px;
+}
+
+.frameParent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  z-index: 1;
+
+  @media screen and (max-width: 1050px) {
+    flex-wrap: wrap;
+  }
+}

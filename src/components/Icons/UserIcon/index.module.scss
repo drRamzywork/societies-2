@@ -1,0 +1,13 @@
+.icon_container {
+  @media screen and (max-width: 992px) {
+    padding: 0px !important;
+    width: 39px;
+    height: 37px;
+    border-radius: 17.13px !important;
+
+    img {
+      width: 18.45px;
+      height: 18.45px;
+    }
+  }
+}

@@ -1,0 +1,569 @@
+// .b,
+// .inputField {
+//   align-self: stretch;
+// }
+
+// .b {
+//   height: 28px;
+//   position: relative;
+//   display: inline-block;
+//
+// }
+// .inputField {
+//   border: 0;
+//   background-color: transparent;
+//   height: 56px;
+//   font-family: var(--font-cairo);
+//   font-weight: 600;
+//   font-size: var(--font-size-base);
+//   color: var(--color-dimgray-200);
+// }
+// .textInputsinputRegular {
+//   align-self: stretch;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+//   gap: var(--gap-9xs);
+//
+//   z-index: 1;
+// }
+// .b1 {
+//   height: 28px;
+//   position: relative;
+//   display: inline-block;
+//
+// }
+// .form {
+//   align-self: stretch;
+//   height: 56px;
+//   font-family: var(--font-cairo);
+//   font-weight: 600;
+//   font-size: var(--font-size-base);
+//   color: var(--color-dimgray-200);
+// }
+// .option {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .dropdownItem,
+// .textWrap {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .textWrap {
+//   overflow: hidden;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+// .dropdownItem {
+//   height: 52px;
+//   background-color: var(--w-background);
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .option1 {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .dropdownItem1,
+// .textWrap1 {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .textWrap1 {
+//   overflow: hidden;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+// .dropdownItem1 {
+//   height: 52px;
+//   background-color: var(--w-background);
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .option2 {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .dropdownItem2,
+// .textWrap2 {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .textWrap2 {
+//   overflow: hidden;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+// .dropdownItem2 {
+//   height: 52px;
+//   background-color: var(--w-background);
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .option3 {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .textWrap3 {
+//   align-self: stretch;
+//   overflow: hidden;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+// }
+// .dropdownItem3,
+// .drowdownList {
+//   flex-direction: column;
+//   align-items: flex-start;
+// }
+// .dropdownItem3 {
+//   align-self: stretch;
+//   height: 52px;
+//   background-color: var(--w-background);
+//   display: flex;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .drowdownList {
+//   width: 100%;
+//   margin: 0 !important;
+//   position: absolute;
+//   top: 77px;
+//   left: 0;
+//   box-shadow: var(--shadow);
+//   border-radius: var(--br-5xs);
+//   overflow: hidden;
+//   display: none;
+//   justify-content: flex-start;
+//   z-index: 2;
+//   text-align: left;
+//   font-size: var(--font-size-base);
+// }
+// .input1 {
+//   align-self: stretch;
+//   position: relative;
+//   gap: var(--gap-9xs);
+// }
+// .input,
+// .input1,
+// .textInputsinputRegularParent {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+// }
+// .input {
+//   align-self: stretch;
+//
+//   z-index: 1;
+// }
+// .textInputsinputRegularParent {
+//   width: 346px;
+//   gap: var(--gap-18xl);
+//   max-width: 100%;
+// }
+// .b2,
+// .div,
+// .icon {
+//   position: relative;
+// }
+// .b2 {
+//   align-self: stretch;
+//   height: 28px;
+//   display: inline-block;
+//
+// }
+// .div,
+// .icon {
+//   flex-shrink: 0;
+// }
+// .div {
+//   width: 304px;
+//   line-height: 24px;
+//   font-weight: 600;
+//   display: inline-block;
+//
+// }
+// .icon {
+//   height: 24px;
+//   width: 24px;
+//   overflow: hidden;
+//   transform: rotate(-180deg);
+//   min-height: 24px;
+// }
+// .inputField1,
+// .text,
+// .textInputsinputRegular1 {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .text {
+//   flex-direction: row;
+//   justify-content: space-between;
+//   gap: var(--gap-327xs);
+// }
+// .inputField1,
+// .textInputsinputRegular1 {
+//   flex-direction: column;
+//   justify-content: flex-start;
+// }
+// .inputField1 {
+//   border-radius: var(--br-5xs);
+//   background-color: var(--w-background);
+//   border: 1px solid var(--color-darkgray);
+//   padding: var(--padding-sm) var(--padding-mini);
+//   font-size: var(--font-size-base);
+//   color: var(--color-dimgray-200);
+// }
+// .textInputsinputRegular1 {
+//   gap: var(--gap-9xs);
+//
+//   z-index: 1;
+// }
+// .b3 {
+//   height: 28px;
+//   position: relative;
+//   display: inline-block;
+//
+// }
+// .form1 {
+//   align-self: stretch;
+//   height: 56px;
+//   font-family: var(--font-cairo);
+//   font-weight: 600;
+//   font-size: var(--font-size-base);
+//   color: var(--color-dimgray-200);
+// }
+// .option4 {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .dropdownItem4,
+// .textWrap4 {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .textWrap4 {
+//   overflow: hidden;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+// .dropdownItem4 {
+//   height: 52px;
+//   background-color: var(--w-background);
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .option5 {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .dropdownItem5,
+// .textWrap5 {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .textWrap5 {
+//   overflow: hidden;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+// .dropdownItem5 {
+//   height: 52px;
+//   background-color: var(--w-background);
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .option6 {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .dropdownItem6,
+// .textWrap6 {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .textWrap6 {
+//   overflow: hidden;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+// .dropdownItem6 {
+//   height: 52px;
+//   background-color: var(--w-background);
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .option7 {
+//   position: relative;
+//   font-weight: 800;
+// }
+// .dropdownItem7,
+// .textWrap7 {
+//   align-self: stretch;
+//   display: flex;
+//   align-items: flex-start;
+// }
+// .textWrap7 {
+//   overflow: hidden;
+//   flex-direction: row;
+//   justify-content: flex-start;
+// }
+// .dropdownItem7 {
+//   height: 52px;
+//   background-color: var(--w-background);
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 0 var(--padding-xs);
+//   box-sizing: border-box;
+// }
+// .drowdownList1,
+// .input2,
+// .input3 {
+//   flex-direction: column;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+// }
+// .drowdownList1 {
+//   width: 100%;
+//   margin: 0 !important;
+//   position: absolute;
+//   top: 77px;
+//   left: 0;
+//   box-shadow: var(--shadow);
+//   border-radius: var(--br-5xs);
+//   overflow: hidden;
+//   display: none;
+//   z-index: 2;
+//   text-align: left;
+//   font-size: var(--font-size-base);
+// }
+// .input2,
+// .input3 {
+//   align-self: stretch;
+//   display: flex;
+// }
+// .input3 {
+//   position: relative;
+//   gap: var(--gap-9xs);
+// }
+// .input2 {
+//
+//   z-index: 1;
+// }
+// .frameParent,
+// .textInputsinputRegularGroup {
+//   display: flex;
+//   align-items: flex-start;
+//   max-width: 100%;
+// }
+// .textInputsinputRegularGroup {
+//   width: 346px;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   gap: var(--gap-6xl);
+// }
+// .frameParent {
+//   align-self: stretch;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   gap: var(--gap-xl);
+//   text-align: right;
+//   font-size: var(--font-size-mini);
+//   color: var(--color-black);
+//   font-family: var(--font-cairo);
+// }
+// @media screen and (max-width: 1050px) {
+//   .frameParent {
+//     flex-wrap: wrap;
+//   }
+// }
+// @media screen and (max-width: 450px) {
+//   .textInputsinputRegularParent {
+//     gap: var(--gap-lg);
+//   }
+// }
+
+.b,
+.inputField {
+  align-self: stretch;
+}
+
+.b {
+  height: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+.inputField {
+  border: 0;
+  background-color: transparent;
+  height: 56px;
+  font-family: var(--font-cairo);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+}
+
+.textInputsinputRegular {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+
+  z-index: 1;
+}
+
+.b1 {
+  height: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+.input1 {
+  align-self: stretch;
+  position: relative;
+  gap: var(--gap-9xs);
+}
+
+.input,
+.input1,
+.textInputsinputRegularParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.input {
+  align-self: stretch;
+
+  z-index: 1;
+}
+
+.textInputsinputRegularParent {
+  width: 346px;
+  gap: var(--gap-18xl);
+  max-width: 100%;
+}
+
+.b2 {
+  align-self: stretch;
+  height: 28px;
+  display: inline-block;
+}
+
+.inputField1,
+.text,
+.textInputsinputRegular1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+
+.inputField1,
+.textInputsinputRegular1 {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.inputField1 {
+  border-radius: var(--br-5xs);
+  background-color: var(--w-background);
+  border: 1px solid var(--color-darkgray);
+  padding: var(--padding-sm) var(--padding-mini);
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+}
+
+.textInputsinputRegular1 {
+  gap: var(--gap-9xs);
+
+  z-index: 1;
+}
+
+.b3 {
+  height: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+.input2,
+.input3 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.input3 {
+  position: relative;
+  gap: var(--gap-9xs);
+  width: 100%;
+}
+
+.input2 {
+  z-index: 1;
+}
+
+.frameParent,
+.textInputsinputRegularGroup {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.textInputsinputRegularGroup {
+  width: 346px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+}
+
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: right;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-cairo);
+}
+
+@media screen and (max-width: 1050px) {
+  .frameParent {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .textInputsinputRegularParent {
+    gap: var(--gap-lg);
+  }
+}

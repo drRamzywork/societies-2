@@ -1,0 +1,209 @@
+// .maskGroupChild {
+//   height: 257px;
+//   width: 257px;
+//   position: relative;
+//   border-radius: var(--br-xl);
+//   object-fit: cover;
+//   display: none;
+// }
+// .transitionTransmuter {
+//   height: 49px;
+//   flex: 1;
+//   box-shadow: 0-4px 8.8px rgba(0, 0, 0, 0.25);
+//   z-index: 2;
+// }
+// .maskGroup {
+//   align-self: stretch;
+//   flex: 1;
+//   border-radius: var(--br-xl);
+//   overflow: hidden;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-end;
+//   justify-content: flex-start;
+//   background-image: url(/rectangle-35@2x.png);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: top;
+// }
+// .go {
+//   flex: 1;
+//   position: relative;
+//   line-height: 24px;
+//   font-weight: 500;
+// }
+// .buttonsbutton3,
+// .text {
+//   align-self: stretch;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+// }
+// .buttonsbutton3 {
+//   border-radius: var(--br-5xs);
+//   background-color: var(--color-steelblue);
+//   flex-direction: column;
+//   padding: var(--padding-smi) 0;
+// }
+// .buttonsbutton7 {
+//   flex: 1;
+//   flex-direction: column;
+// }
+// .buttonsbutton7,
+// .collisionController,
+// .maskGroupParent {
+//   display: flex;
+//   align-items: flex-start;
+//   justify-content: flex-start;
+// }
+// .collisionController {
+//   align-self: stretch;
+//   flex-direction: row;
+//   padding: 0 var(--padding-40xl) 0 var(--padding-38xl-5);
+// }
+// .maskGroupParent {
+//   height: 325px;
+//   width: 257px;
+//   flex-direction: column;
+//   gap: var(--gap-lg);
+//   text-align: center;
+//   font-size: var(--font-size-xl);
+//   color: var(--w-background);
+//   font-family: var(--font-cairo);
+// }
+// @media screen and (max-width: 450px) {
+//   .go {
+//     font-size: var(--font-size-base);
+//     line-height: 19px;
+//   }
+//   .collisionController {
+//     padding-left: var(--padding-xl);
+//     padding-right: var(--padding-xl);
+//     box-sizing: border-box;
+//   }
+// }
+
+// .societiesSwiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// h2.h2 {
+//   width: 100%;
+// }
+
+.maskGroupChild {
+  height: 257px;
+  width: 257px;
+  position: relative;
+  border-radius: var(--br-xl);
+  object-fit: cover;
+  display: none;
+}
+
+.transitionTransmuter {
+  // height: 50px;
+  min-height: 49px;
+  padding-bottom: 5px;
+  flex: 1;
+  box-shadow: 0 -4px 8.8px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @apply bg-gradient-to-r from-[#265fa2a3] to-[#24b174a3] text-white text-[20px]  rounded-b-[20px] hover:bg-gradient-to-r;
+}
+
+.maskGroup {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.go {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.buttonsbutton3,
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.buttonsbutton3 {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-steelblue);
+  flex-direction: column;
+  padding: var(--padding-smi) 0;
+}
+
+.buttonsbutton7 {
+  flex: 1;
+  flex-direction: column;
+}
+
+.buttonsbutton7,
+.collisionController,
+.maskGroupParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.collisionController {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-40xl) 0 var(--padding-38xl-5);
+}
+
+.maskGroupParent {
+  height: 325px;
+  width: 257px;
+  flex-direction: column;
+  gap: var(--gap-lg);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--w-background);
+  font-family: var(--font-cairo);
+}
+
+@media screen and (max-width: 450px) {
+  .go {
+    font-size: var(--font-size-base);
+    line-height: 19px;
+  }
+  .collisionController {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+
+.societiesSwiper {
+  width: 100%;
+  height: 100%;
+}
+
+h2.h2 {
+  width: 100%;
+  font-size: 42px;
+  font-weight: bold;
+}

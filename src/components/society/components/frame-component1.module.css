@@ -1,0 +1,268 @@
+.wiredFlat1992ThePope2Icon {
+  height: 193px;
+  width: 193px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.wiredFlat1992ThePope2Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl) var(--padding-5xs-7) var(--padding-4xl);
+}
+.b,
+.div {
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.div {
+  font-weight: 900;
+  margin-top: -7.7px;
+}
+.b {
+  display: inline-block;
+  min-width: 54px;
+}
+.wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  margin-top: -7.7px;
+  font-size: var(--font-size-13xl);
+  color: var(--color-steelblue);
+}
+.groupDiv {
+  width: 238px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.box1Icon {
+  height: 193px;
+  width: 193px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.box1Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xs) var(--padding-5xs-6) var(--padding-7xs);
+}
+.b1,
+.div1 {
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.div1 {
+  align-self: stretch;
+  font-weight: 900;
+  margin-top: -7.6px;
+}
+.b1 {
+  display: inline-block;
+  min-width: 54px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-56xl);
+  margin-top: -7.6px;
+  font-size: var(--font-size-13xl);
+  color: var(--color-steelblue);
+}
+.frameParent1 {
+  width: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.div2,
+.growth1Icon {
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.growth1Icon {
+  width: 193px;
+  height: 193px;
+  object-fit: cover;
+}
+.div2 {
+  font-weight: 900;
+}
+.dataAggregator {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-6xs) 0 var(--padding-5xs);
+  margin-top: -6.5px;
+}
+.b2 {
+  position: relative;
+  display: inline-block;
+  min-width: 115px;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-20xl);
+  margin-top: -6.5px;
+  font-size: var(--font-size-13xl);
+  color: var(--color-steelblue);
+}
+.growth1Parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.wiredFlat1992ThePope1Icon {
+  height: 193px;
+  width: 193px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.wiredFlat1992ThePope1Wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl) var(--padding-5xs-7) var(--padding-4xl);
+}
+.b3,
+.div3 {
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 1de1738;
+}
+.div3 {
+  font-weight: 900;
+  margin-top: -7.7px;
+}
+.b3 {
+  display: inline-block;
+  min-width: 115px;
+}
+.frameDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-42xl) 0 var(--padding-43xl);
+  margin-top: -7.7px;
+  font-size: var(--font-size-13xl);
+  color: var(--color-steelblue);
+}
+.frameGroup,
+.frameParent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.frameGroup {
+  width: 1200px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.frameContainer,
+.frameParent {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameContainer {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-xl);
+}
+.frameWrapper {
+  width: 1383px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-44xl) var(--padding-11xl-3);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: right;
+  font-size: var(--font-size-6xl-4);
+  color: var(--color-black);
+  font-family: var(--font-cairo);
+}
+@media screen and (max-width: 1200px) {
+  .frameWrapper {
+    padding-left: var(--padding-12xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .b,
+  .b1,
+  .b2,
+  .b3 {
+    font-size: var(--font-size-7xl);
+  }
+  .frameGroup {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .div {
+    font-size: var(--font-size-xl);
+  }
+  .b {
+    font-size: var(--font-size-lgi);
+  }
+  .div1 {
+    font-size: var(--font-size-xl);
+  }
+  .b1 {
+    font-size: var(--font-size-lgi);
+  }
+  .div2 {
+    font-size: var(--font-size-xl);
+  }
+  .b2 {
+    font-size: var(--font-size-lgi);
+  }
+  .div3 {
+    font-size: var(--font-size-xl);
+  }
+  .b3 {
+    font-size: var(--font-size-lgi);
+  }
+}

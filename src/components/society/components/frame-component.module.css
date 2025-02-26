@@ -1,0 +1,161 @@
+.frameChild,
+.frameChild1,
+.frameChild2,
+.frameChild3,
+.frameInner,
+.frameItem,
+.rectangleIcon {
+  height: 122px;
+  width: 122px;
+  position: relative;
+  border-radius: var(--br-sm);
+  object-fit: cover;
+  min-height: 122px;
+}
+.rectangleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.div,
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  width: 119px;
+  position: relative;
+  display: inline-block;
+  min-width: 119px;
+}
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  width: 95px;
+  min-width: 95px;
+}
+.div3,
+.div4,
+.div5,
+.div6 {
+  width: 119px;
+  min-width: 119px;
+}
+.div4,
+.div5,
+.div6 {
+  width: 95px;
+  min-width: 95px;
+}
+.div5,
+.div6 {
+  width: 119px;
+  min-width: 119px;
+}
+.div6 {
+  width: 95px;
+  min-width: 95px;
+}
+.errorHandlerInner,
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.parent {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.errorHandlerInner {
+  width: 1155px;
+  justify-content: flex-start;
+  padding: 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.errorHandler {
+  width: 1166px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-10xs);
+}
+.errorHandler,
+.errorHandlerWrapper,
+.inputProcessor {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.errorHandlerWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.inputProcessor {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-13xl);
+}
+.inputProcessorWrapper {
+  width: 1366px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-44xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: right;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-lateef);
+}
+@media screen and (max-width: 1200px) {
+  .inputProcessorWrapper {
+    padding-left: var(--padding-12xl);
+    padding-right: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .div,
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6 {
+    font-size: var(--font-size-7xl);
+  }
+  .parent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .inputProcessor {
+    gap: var(--gap-base);
+  }
+}
+@media screen and (max-width: 450px) {
+  .div,
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6 {
+    font-size: var(--font-size-lgi);
+  }
+}

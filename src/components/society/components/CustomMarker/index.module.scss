@@ -1,0 +1,32 @@
+#mapMark {
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+
+    img {
+    }
+  }
+
+  .arrow_container {
+    position: absolute;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    cursor: pointer;
+  }
+
+  img {
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

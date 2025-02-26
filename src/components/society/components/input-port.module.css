@@ -1,0 +1,46 @@
+.div {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 734px;
+  max-width: 100%;
+}
+.frameChild {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-mediumseagreen);
+}
+.inputPort,
+.inputPortInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.inputPortInner {
+  flex-direction: column;
+  padding: var(--padding-xs) 0 0;
+}
+.inputPort {
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-xs);
+  max-width: 100%;
+  text-align: right;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-cairo);
+}
+@media screen and (max-width: 1050px) {
+  .div {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .div {
+    font-size: var(--font-size-lgi);
+  }
+}
