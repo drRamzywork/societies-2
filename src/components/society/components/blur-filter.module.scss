@@ -163,6 +163,10 @@
   position: relative;
   border-radius: 50%;
   background-color: var(--color-mediumseagreen);
+  @media screen and (max-width: 992px) {
+    width: 8px;
+    height: 8px;
+  }
 }
 .ellipseWrapper {
   display: flex;
@@ -183,6 +187,9 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: var(--gap-xs);
+  @media screen and (max-width: 992px) {
+    flex-wrap: nowrap;
+  }
 }
 .brightnessFilterInner {
   align-self: stretch;
@@ -215,7 +222,12 @@
   font-size: var(--font-size-13xl);
   color: var(--color-black);
   font-family: var(--font-cairo);
+  @media screen and (max-width: 992px) {
+    padding: 0;
+    font-size: 18px;
+  }
 }
+
 @media screen and (max-width: 1050px) {
   .b,
   .div {

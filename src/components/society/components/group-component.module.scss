@@ -96,10 +96,17 @@
 .maskGroupChild {
   height: 257px;
   width: 257px;
-  position: relative;
+  position: absolute;
+
   border-radius: var(--br-xl);
   object-fit: cover;
-  display: none;
+  // display: none;
+  z-index: -1;
+
+  @media screen and (max-width: 450px) {
+    width: 188px;
+    height: 157px;
+  }
 }
 
 .transitionTransmuter {
@@ -110,12 +117,19 @@
   box-shadow: 0 -4px 8.8px rgba(0, 0, 0, 0.25);
   z-index: 2;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  position: relative;
+  z-index: 11;
 
   @apply bg-gradient-to-r from-[#265fa2a3] to-[#24b174a3] text-white text-[20px]  rounded-b-[20px] hover:bg-gradient-to-r;
+
+  @media screen and (max-width: 450px) {
+    max-width: 188px;
+    font-size: 16px;
+  }
 }
 
 .maskGroup {
@@ -153,6 +167,9 @@
   background-color: var(--color-steelblue);
   flex-direction: column;
   padding: var(--padding-smi) 0;
+  @media screen and (max-width: 450px) {
+    max-width: 137px;
+  }
 }
 
 .buttonsbutton7 {
@@ -183,6 +200,12 @@
   font-size: var(--font-size-xl);
   color: var(--w-background);
   font-family: var(--font-cairo);
+  text-decoration: none;
+  @media screen and (max-width: 450px) {
+    align-items: flex-start;
+    height: auto;
+    min-height: 221px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -206,4 +229,8 @@ h2.h2 {
   width: 100%;
   font-size: 42px;
   font-weight: bold;
+
+  @media screen and (max-width: 450px) {
+    font-size: 24px;
+  }
 }

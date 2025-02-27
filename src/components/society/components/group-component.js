@@ -127,7 +127,6 @@ import {
 import Link from "next/link";
 
 const GroupComponent = ({
-  rectangle35,
   propBackgroundImage,
   propPadding,
   propPadding1,
@@ -138,10 +137,10 @@ const GroupComponent = ({
     [propBackgroundImage]
   );
 
-  const collisionControllerStyle = useMemo(
-    () => ({ padding: propPadding }),
-    [propPadding]
-  );
+  // const collisionControllerStyle = useMemo(
+  //   () => ({ padding: propPadding }),
+  //   [propPadding]
+  // );
 
   const buttonsButton3Style = useMemo(
     () => ({ padding: propPadding1 }),
@@ -152,7 +151,9 @@ const GroupComponent = ({
     <>
       {societiesData.map((area, index) => (
         <>
-          <h2 className={styles.h2}>{area.name}</h2>
+          <h2 className={styles.h2} key={index}>
+            {area.name}
+          </h2>
           {/* <Swiper
             dir="rtl"
             loop={false}
@@ -196,12 +197,24 @@ const GroupComponent = ({
           </Swiper> */}
 
           <Swiper
+            key={index}
             dir="rtl"
             loop={false}
             className={styles.societiesSwiper}
             slidesPerView={4.5}
+            breakpoints={{
+              1: {
+                slidesPerView: 1.5,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 4.5,
+              },
+            }}
           >
-            {area.societies.map((society, sIndex) => (
+            {area?.societies.map((society, sIndex) => (
               <SwiperSlide key={sIndex}>
                 <Link
                   href={`/society/${society.id}`}
@@ -211,21 +224,15 @@ const GroupComponent = ({
                     <img
                       className={styles.maskGroupChild}
                       alt=""
-                      src={rectangle35 || "path/to/default/image"} // Provide a default image path
+                      src={society?.image || "/1.png"}
                     />
                     <button className={styles.transitionTransmuter}>
                       {society.name}
                     </button>{" "}
                   </div>
-                  <div
-                    className={styles.collisionController}
-                    style={collisionControllerStyle}
-                  >
+                  <div className={styles.collisionController}>
                     <div className={styles.buttonsbutton7}>
-                      <div
-                        className={styles.buttonsbutton3}
-                        style={buttonsButton3Style}
-                      >
+                      <div className={styles.buttonsbutton3}>
                         <div className={styles.text}>
                           <div className={styles.go}>عرض المزيد</div>
                         </div>

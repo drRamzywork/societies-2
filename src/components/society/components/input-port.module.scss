@@ -33,6 +33,9 @@
   font-size: var(--font-size-5xl);
   color: var(--color-black);
   font-family: var(--font-cairo);
+  @media screen and (max-width: 992px) {
+    flex-wrap: nowrap;
+  }
 }
 @media screen and (max-width: 1050px) {
   .div {

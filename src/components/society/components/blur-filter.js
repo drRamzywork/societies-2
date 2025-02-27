@@ -1,4 +1,4 @@
-import styles from "./blur-filter.module.css";
+import styles from "./blur-filter.module.scss";
 
 const BlurFilter = ({ societyDetails }) => {
   return (

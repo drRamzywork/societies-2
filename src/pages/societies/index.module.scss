@@ -122,6 +122,10 @@
   display: flex;
   justify-content: flex-start;
   gap: var(--gap-38xl);
+
+  @media screen and (max-width: 450px) {
+    gap: 16px;
+  }
 }
 .frameGroup,
 .frameWrapper {
@@ -138,6 +142,9 @@
   justify-content: flex-end;
   padding: 0 var(--padding-10xl) 0 0;
   box-sizing: border-box;
+  @media screen and (max-width: 450px) {
+    padding: 0;
+  }
 }
 .frameDiv,
 .logicGateInner {
@@ -155,12 +162,15 @@
   /* width: 1395px; */
   flex-direction: row;
   align-items: flex-start;
-  padding: 0 var(--padding-28xl) var(--padding-5xs);
+  padding: 0 var(--padding-28xl) var(--padding-5xs) 0px;
   box-sizing: border-box;
   text-align: right;
   font-size: var(--font-size-13xl);
   color: var(--color-black);
   font-family: var(--font-cairo);
+  @media screen and (max-width: 450px) {
+    padding: 0 16px 16px 0px !important;
+  }
 }
 .h21 {
   margin: 0;

@@ -9,7 +9,7 @@ import { Pagination, } from 'swiper/modules';
 import Button from '@/components/Utils/Button';
 import Link from 'next/link';
 
-const ErasPlacesSlider = ({ places, activeCity, onPlaceClick, setActiveCity }) => {
+const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
   const swiperRef = useRef(null);
   const swiperVerticalRef = useRef(null);
   const filteredPlaces = places?.filter(place => place.svgX !== null && place.svgY !== null);
@@ -85,7 +85,7 @@ const ErasPlacesSlider = ({ places, activeCity, onPlaceClick, setActiveCity }) =
 
   return (
     <>
-      {/* {isMobileView === true && <div className={styles.swiper_container} dir='rtl'>
+      {isMobileView === true && <div className={styles.swiper_container} dir='rtl'>
         <Swiper
           ref={swiperRef}
           centeredSlides={true}
@@ -97,37 +97,81 @@ const ErasPlacesSlider = ({ places, activeCity, onPlaceClick, setActiveCity }) =
           className="places-swiper" >
 
           {filteredPlaces?.map((city, index) =>
-            <SwiperSlide className={styles.places_container} key={city.id} >
-              <div className={`${styles.places} ${city.id === activeCity ? styles.active : ''}`} >
-                <div className={styles.img_container} onClick={() => onPlaceClick(city.id)}>
-                  {imageLoadingStates[city?.id] && (
-                    <RotatingLines
-                      strokeColor="grey"
-                      strokeWidth="5"
-                      animationDuration="0.75"
-                      width="96"
-                      visible={true}
 
+
+
+
+            <SwiperSlide className={styles.places_container} key={city.id1} >
+              <div className={`${styles.places} ${city.id === activeCity ? styles.active : ''}`}>
+                {/* <div className={styles.img_container} onClick={() => onPlaceClick(city.id)}>
+    {imageLoadingStates[city.id] && (
+      <RotatingLines
+        strokeColor="grey"
+        strokeWidth="5"
+        animationDuration="0.75"
+        width="96"
+        visible={true}
+
+      />
+    )}
+
+    <img
+      style={{ display: imageLoadingStates[city.id] ? 'none' : 'block' }}
+      src={'/imgs/bg/3.jpg'}
+      alt={city?.name}
+      onLoad={() => handleImageLoad(city.id)}
+    />
+
+  </div>
+  <div className={styles.name}>
+    <p>{city.name}</p>
+  </div> */}
+
+
+                <Link href='/society/22' target='_blank' className={styles.box}>
+                  <div className={styles.img_container}>
+                    {imageLoadingStates[city.id] && (
+                      <RotatingLines
+                        strokeColor="grey"
+                        strokeWidth="5"
+                        animationDuration="0.75"
+                        width="96"
+                        visible={true}
+
+                      />
+                    )}
+
+                    <img
+                      style={{ display: imageLoadingStates[city.id] ? 'none' : 'block' }}
+                      src={'/imgs/bg/3.jpg'}
+                      alt={city?.name}
+                      onLoad={() => handleImageLoad(city.id)}
                     />
-                  )}
 
-                  <img
-                    style={{ display: imageLoadingStates[city.id] ? 'none' : 'block' }}
-                    src={adjustImageUrl(city?.icon)}
-                    alt={city?.name}
-                    onLoad={() => handleImageLoad(city.id)}
-                  />
 
-                </div>
-                <div className={styles.name}>
-                  <p>{city.name}</p>
-                </div>
+                    <div className={styles.title} >
+                      <h3 > جمعية الرياض العامة </h3>
+                    </div>
+                  </div>
+
+                  <div className={styles.text_container}>
+                    <div className={styles.desc}>
+                      <p> جمعية متخصصة في رعاية الشباب       </p>
+                    </div>
+
+                    <div className={styles.button_container}>
+                      <Button> قراءة المزيد</Button>
+                    </div>
+
+                  </div>
+
+                </Link >
               </div>
             </SwiperSlide>
           )
           }
         </Swiper>
-      </div >} */}
+      </div >}
 
       {isMobileView === false && <div className={styles.swiper_container} dir='rtl'>
         <Swiper

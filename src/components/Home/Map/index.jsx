@@ -147,10 +147,10 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
           yOffset = -25;
         } else if (name === "الباحة") {
           xOffset = 0;
-          yOffset = -25;
+          yOffset = -5;
         } else if (name === "مكة") {
           xOffset = 15;
-          yOffset = -45;
+          yOffset = -25;
         } else if (name === "المدينة المنورة") {
           xOffset = -10;
           yOffset = 0;
@@ -167,6 +167,10 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
         else if (name === "المنطقة الشرقية") {
           xOffset = -2;
           yOffset = -15;
+        }
+        else if (name === "نجران") {
+          xOffset = -2;
+          yOffset = -2;
         }
 
 
@@ -193,122 +197,119 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
 
   return (
     <>
-
       <section id='Places' className={styles.Places} dir={`${router.locale === 'ar' ? 'rtl' : 'ltr'}`}>
-        {cityData && (
-          <div className={styles.layer} />
-        )}
 
+        <div className="container">
 
+          {cityData && (
+            <div className={styles.layer} />
+          )}
 
+          <div className={styles.map_container}>
+            <div className={styles.map} dir='ltr'>
 
-
-        <div className={styles.map_container}>
-          <div className={styles.map} dir='ltr'>
-
-            <xml version="1.0" encoding="UTF-8" standalone="no" />
-            <svg
-              // id="svg1"
-              width="858"
-              height="724"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className={`${isSafari ? "saudi-map safari" : "saudi-map"}`}
-              viewBox="90 90 758 624"
-              ref={svgRef}
-            >
-              {dataAllCitiesMap?.map((land, index) => (
-                <g className="land" data-name={land.name} key={index} id={land.svgPathId} onClick={() => handleZoomToLand(index)}>
-                  {convertSVGPathsToJSX(land.svgPath)}
-                </g>
-              ))}
-
-
-              {
-                landCenters.map((land, index) => (
-                  <foreignObject key={index} x={land.x} y={land.y}>
-                    <div
-                      style={rotatedCities[land.name] ? { transform: `rotate(${rotatedCities[land.name]}deg)` } : {}}
-                      className="city-container" xmlns="http://www.w3.org/1999/xhtml" onClick={() => handleZoomToLand(index)}>
-
-
-
-
-                      {activeIndex == index ?
-                        <div className={`city-name `} id="p1">
-
-                          <div id='name'>
-                            <motion.div
-                              className="details"
-                              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                              animate={{ opacity: 1, scale: 1, y: 0 }}
-                              transition={{ duration: 0.8, ease: "easeOut" }}
-                              viewport={{ once: true, amount: 0.2 }}>
-                              <div className="img_container">
-                                <Image width={73} height={69} src={'/1.png'} alt={"1"} />
-
-                              </div>
-                              <div className="text_container">
-                                <div className="title">
-                                  <p>عدد الجمعيات</p>
-                                </div>
-
-                                <hr />
-                                <div className="desc">
-                                  <p>
-                                    جمعية  <span>15</span>
-                                  </p>
-                                </div>
-                              </div>
-
-                            </motion.div>
-                          </div>
-                        </div>
-                        :
-                        <div className={`city-name `} id="p1">
-                          <div id='name'>
-
-
-                            <Image width={28} height={28} src={'/location-ico.png'} alt={"location"} />
-                            <p>
-                              {land.name}
-                            </p>
-                          </div>
-                        </div>
-
-                      }
-
-                    </div>
-                  </foreignObject>
+              <xml version="1.0" encoding="UTF-8" standalone="no" />
+              <svg
+                // id="svg1"
+                width="858"
+                height="724"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className={`${isSafari ? "saudi-map safari" : "saudi-map"}`}
+                viewBox="90 90 758 624"
+                ref={svgRef}
+              >
+                {dataAllCitiesMap?.map((land, index) => (
+                  <g className="land" data-name={land.name} key={index} id={land.svgPathId} onClick={() => handleZoomToLand(index)}>
+                    {convertSVGPathsToJSX(land.svgPath)}
+                  </g>
                 ))}
 
 
+                {
+                  landCenters.map((land, index) => (
+                    <foreignObject key={index} x={land.x} y={land.y}>
+                      <div
+                        style={rotatedCities[land.name] ? { transform: `rotate(${rotatedCities[land.name]}deg)` } : {}}
+                        className="city-container" xmlns="http://www.w3.org/1999/xhtml" onClick={() => handleZoomToLand(index)}>
 
 
 
-            </svg>
 
-          </div >
-          {places !== null &&
-            <AnimatePresence >
-              <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -50 }}
-                transition={{ duration: 0.5 }}
-                className={styles.slider_wrap}
-              >
-                <ErasPlacesSlider
-                  places={places}
-                  setActiveCity={setActiveCity}
-                  activeCity={activeCity} onPlaceClick={handlePlaceWindow} />
+                        {activeIndex == index ?
+                          <div className={`city-name `} id="p1">
 
-              </motion.div>
-            </AnimatePresence>
-          }
+                            <div id='name'>
+                              <motion.a
+                                href='/societies'
+                                className="details"
+                              // initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                              // animate={{ opacity: 1, scale: 1, y: 0 }}
+                              // transition={{ duration: 0.8, ease: "easeOut" }}
+                              // viewport={{ once: true, amount: 0.2 }}
+                              >
+                                <div className="img_container">
+                                  <Image width={73} height={69} src={'/1.png'} alt={"1"} />
 
+                                </div>
+                                <div className="text_container">
+                                  <div className="title">
+                                    <p>عدد الجمعيات</p>
+                                  </div>
+
+                                  <hr />
+                                  <div className="desc">
+                                    <p>
+                                      جمعية  <span>15</span>
+                                    </p>
+                                  </div>
+                                </div>
+
+                              </motion.a>
+                            </div>
+                          </div>
+                          :
+                          <div className={`city-name `} id="p1">
+                            <div id='name'>
+
+
+                              <p>
+                                {land.name}
+                              </p>
+                            </div>
+                          </div>
+
+                        }
+
+                      </div>
+                    </foreignObject>
+                  ))}
+
+              </svg>
+
+            </div >
+
+
+            {places !== null &&
+              <AnimatePresence >
+                <motion.div
+                  initial={{ opacity: 0, y: -50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -50 }}
+                  transition={{ duration: 0.5 }}
+                  className={styles.slider_wrap}
+                >
+                  <ErasPlacesSlider
+                    places={places}
+                    setActiveCity={setActiveCity}
+                    activeCity={activeCity} onPlaceClick={handlePlaceWindow} />
+
+                </motion.div>
+              </AnimatePresence>
+            }
+
+          </div>
         </div>
-
 
 
       </section >

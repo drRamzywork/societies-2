@@ -221,7 +221,8 @@
   position: relative;
   z-index: 1;
   padding-bottom: 22px;
-
+  text-decoration: none;
+  color: unset;
   &.active::after {
     position: absolute;
     content: "";

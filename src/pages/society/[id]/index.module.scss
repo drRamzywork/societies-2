@@ -570,6 +570,11 @@
   padding: var(--padding-10xs) 0 0;
   box-sizing: border-box;
 
+  @media screen and (max-width: 450px) {
+    width: 100%;
+    align-self: flex-end;
+  }
+
   .component4 {
     align-self: stretch;
     height: 76px;
@@ -609,6 +614,11 @@
   flex: 1;
   justify-content: space-between;
   gap: var(--gap-xl);
+
+  @media screen and (max-width: 450px) {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .frameWrapper {
@@ -629,7 +639,7 @@
 }
 
 .inputPortWrapper {
-  width: 1177px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -649,7 +659,7 @@
 
 .frameWrapper1,
 .frameWrapper2 {
-  width: 1177px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -684,11 +694,16 @@
 }
 
 .frameParent1 {
-  display: flex;
+  // display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: var(--gap-3xs);
+
+  @media screen and (max-width: 992px) {
+    justify-content: flex-end;
+    margin-top: 121px;
+  }
 }
 
 .frameDiv {

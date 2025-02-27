@@ -122,7 +122,7 @@ const FrameComponent7 = () => {
       <div className={styles.frameWrapper7}>
         <div className={styles.frameParent6}>
           <div className={styles.wrapper8}>
-            <b className={styles.b13}>مواقع التواصل الاجتماعي</b>
+            <b className={`${styles.b13} mb-3`}>مواقع التواصل الاجتماعي</b>
           </div>
           <div className={styles.frameParent7}>
             <div className={styles.frameParent8}>

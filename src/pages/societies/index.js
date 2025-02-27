@@ -1,8 +1,7 @@
 import DataGatherer from "@/society/components/data-gatherer";
-import OvalOrchard from "@/society/components/oval-orchard";
 import GroupComponent from "@/society/components/group-component";
 import Fotter from "@/society/components/fotter";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import Head from "next/head";
 
 const Frame = ({ societiesData }) => {
@@ -82,18 +81,8 @@ const Frame = ({ societiesData }) => {
             <div className={styles.frameDiv}>
               <div className={styles.frameWrapper}>
                 <div className={styles.frameGroup}>
-                  {/* <div className={styles.frameContainer}>
-                  <div className={styles.arrowLeftWrapper}>
-                    <img
-                      className={styles.arrowLeftIcon}
-                      alt=""
-                      src="/arrow-left1.svg"
-                    />
-                  </div>
-                </div> */}
                   <div className={styles.frameParent1}>
                     <GroupComponent
-                      rectangle35="/rectangle-35@2x.png"
                       propBackgroundImage="url('/rectangle-35@2x.png')"
                       propPadding="0px var(--padding-38xl) 0px var(--padding-38xl-5)"
                       propPadding1="var(--padding-smi) var(--padding-12xs)"
@@ -104,51 +93,6 @@ const Frame = ({ societiesData }) => {
               </div>
             </div>
           </section>
-
-          {/* <section className={styles.logicGateChild}>
-          <div className={styles.parent1}>
-            <h2 className={styles.h21}>جمعيات المدينة</h2>
-            <div className={styles.frameWrapper1}>
-              <div className={styles.frameParent2}>
-                <div className={styles.frameWrapper2}>
-                  <div className={styles.arrowLeftContainer}>
-                    <img
-                      className={styles.arrowLeftIcon1}
-                      alt=""
-                      src="/arrow-left1.svg"
-                    />
-                  </div>
-                </div>
-                <div className={styles.frameParent3}>
-                  <GroupComponent
-                    rectangle35="/rectangle-35@2x.png"
-                    propBackgroundImage="url('/rectangle-35@2x.png')"
-                    propPadding="0px var(--padding-38xl) 0px var(--padding-38xl-5)"
-                    propPadding1="var(--padding-smi) var(--padding-12xs)"
-                  />
-                  <GroupComponent
-                    rectangle35="/rectangle-35@2x.png"
-                    propBackgroundImage="url('/rectangle-35@2x.png')"
-                    propPadding="0px var(--padding-38xl) 0px var(--padding-38xl-5)"
-                    propPadding1="var(--padding-smi) var(--padding-12xs)"
-                  />
-                  <GroupComponent
-                    rectangle35="/rectangle-35@2x.png"
-                    propBackgroundImage="url('/rectangle-35@2x.png')"
-                    propPadding="0px var(--padding-38xl) 0px var(--padding-38xl-5)"
-                    propPadding1="var(--padding-smi) var(--padding-12xs)"
-                  />
-                  <GroupComponent
-                    rectangle35="/rectangle-35@2x.png"
-                    propBackgroundImage="url('/rectangle-35@2x.png')"
-                    propPadding="0px var(--padding-38xl) 0px var(--padding-38xl-5)"
-                    propPadding1="var(--padding-smi) var(--padding-12xs)"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
         </main>
         <Fotter logo1="/logo-1-11@2x.png" />
       </div>

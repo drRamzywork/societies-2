@@ -3,7 +3,7 @@
   z-index: 2;
   position: relative;
   z-index: 222;
-  top: 14px;
+  top: 114px;
   z-index: 1;
   .layer {
     position: absolute;
@@ -105,21 +105,22 @@
   }
 }
 
-.map_container1,
 .map_container {
   margin-top: -80px;
   overflow: hidden;
 
   .map {
-    margin-left: 20px;
     margin-bottom: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     flex-basis: 100%;
+    height: 617px;
+
+    margin-bottom: 24px;
 
     @media screen and (max-width: 450px) {
       padding-top: 0;
@@ -127,7 +128,7 @@
       margin-left: 0;
 
       & svg {
-        height: 347px;
+        height: 317px;
       }
     }
 
@@ -667,7 +668,6 @@
 }
 
 // EN Styles
-.map_container1,
 .map_container {
   .map {
     .custom_box[dir="ltr"] {

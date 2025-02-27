@@ -176,7 +176,7 @@ import InputPort from "@/components/society/components/input-port";
 import FrameComponent7 from "@/components/society/components/frame-component7";
 import Fotter from "@/components/society/components/fotter";
 import DataGatherer from "@/components/society/components/data-gatherer";
-import styles from "./index.module.scss"; // ✅ Import updated SCSS file
+import styles from "./index.module.scss"; // 
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
@@ -269,7 +269,7 @@ const Frame1 = ({ societyDetails }) => {
                     className={styles.wrapperRectangle35Child}
                     loading="lazy"
                     alt={societyDetails?.name}
-                    src={societyDetails?.logo}
+                    src={societyDetails?.image || '/1.png'}
                   />
                 </div>
               </div>
@@ -280,41 +280,24 @@ const Frame1 = ({ societyDetails }) => {
 
             {/* Content Section */}
             <div className={styles.frameDiv}>
-              <div className={styles.dataHubParent}>
-                <div className={styles.dataHub}>
-                  <p className={styles.div1}>
-                    منصة تجمع الجمعيات الدولية في مكان واحد هي تطبيق رائع يوفر
-                    منصة مركزية لتبادل المعرفة والخبرات بين الجمعيات الدولية
-                    المختلفة. تهدف هذه المنصة إلى تسهيل التواصل والتعاون بين
-                    الجمعيات الدولية في مختلف المجالات، سواء كانت تتعلق بالتنمية
-                    المستدامة، حقوق الإنسان، الصحة، التعليم، أو أي مجال آخر.
-                  </p>
-                </div>
 
-                {/* Services Section */}
-                <b className={styles.b}>الخدمات المقدمة</b>
-                <div className={styles.inputPortWrapper}>
-                  <InputPort
-                    prop="مساعدة الشباب في الحصول علي فرص عمل جديده وجديره بهم و الحرص علي الحصول علي مكانة مميزه تليق بهم"
-                  />
-                </div>
-              </div>
 
-              <div className={styles.frameWrapper1}>
+              <div className={`${styles.frameWrapper1}`}>
                 <InputPort
                   prop="مساعدة الشباب في الحصول علي فرص عمل جديده وجديره بهم و الحرص علي الحصول علي مكانة مميزه"
                 />
               </div>
 
-              <div className={styles.frameWrapper2}>
+              {/* <div className={styles.frameWrapper2}>
                 <InputPort
                   prop="مساعدة الشباب في الحصول علي فرص عمل جديده وجديره بهم و الحرص علي الحصول علي مكانة مميزه"
                 />
-              </div>
+              </div> */}
 
               {/* Participations Section */}
-              <b className={styles.b1}>مشاركات الجمعية</b>
               <div className={styles.frameParent1}>
+                <b className={`${styles.b1} text-star`}>مشاركات الجمعية</b>
+
                 <div className={styles.parent1}>
                   <p className={styles.div2}>
                     مشاركة في افطار العديد من العمال في الحرم المكي

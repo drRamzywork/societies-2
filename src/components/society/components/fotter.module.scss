@@ -1,4 +1,4 @@
-.fotterChild {
+/* .fotterChild {
   height: 325px;
   width: 1440px;
   position: relative;
@@ -410,5 +410,203 @@
   .fotter {
     padding-left: var(--padding-xl);
     box-sizing: border-box;
+  }
+} */
+/* ✅ Footer Main Container */
+.fotter {
+  align-self: stretch;
+  background-color: var(--color-gray-300);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: var(--padding-smi-7) var(--padding-52xl) var(--padding-30xl-6)
+    var(--padding-65xl);
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--w-background);
+  font-family: var(--font-cairo);
+}
+
+/* ✅ Background Shape */
+.fotterChild {
+  height: 325px;
+  width: 100%;
+  background-color: var(--color-gray-300);
+  display: none;
+}
+
+/* ✅ "تواصل معنا" Section */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  font-size: var(--font-size-5xl);
+}
+
+/* ✅ Contact Form */
+.frameParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-base-7);
+  max-width: 100%;
+}
+
+/* ✅ Email Input */
+.rectangleParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--w-background);
+  border-radius: var(--br-6xs);
+  padding: var(--padding-9xs) var(--padding-sm-1);
+  color: var(--color-gray-100);
+  max-width: 100%;
+}
+
+/* ✅ Message Input */
+.frameItem {
+  width: 100%;
+  height: 82px;
+  border-radius: var(--br-6xs);
+  border: none;
+  outline: none;
+  padding: var(--padding-9xs) var(--padding-sm-1);
+  font-family: var(--font-cairo);
+  font-size: var(--font-size-base);
+  background-color: var(--w-background);
+}
+
+/* ✅ Send Button */
+.rectangleGroup {
+  background-color: var(--w-background);
+  border-radius: var(--br-4xs);
+  padding: 4px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+
+  .b {
+    margin: auto;
+    color: black;
+    font-size: 12px;
+  }
+}
+
+.rectangleGroup:hover {
+  background-color: #ddd;
+}
+
+/* ✅ Bottom Section */
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  gap: var(--gap-19xl-4);
+  max-width: 100%;
+  font-family: var(--font-reem-kufi);
+}
+
+/* ✅ Website Info */
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+/* ✅ Social Media Icons */
+.facebookParent {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-xl);
+}
+
+.facebookIcon,
+.twitterIcon,
+.snapchatIcon,
+.youtubeIcon,
+.instagramIcon {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+}
+
+/* ✅ Contact Section */
+.frameParent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-smi);
+}
+
+/* ✅ Logo */
+.logo1Wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo1Icon {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 1200px) {
+  .fotter {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: var(--padding-12xl);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fotter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--padding-xl);
+  }
+
+  .frameGroup {
+    align-items: center;
+    text-align: center;
+  }
+
+  .facebookParent {
+    justify-content: center;
+  }
+
+  .rectangleParent,
+  .frameItem {
+    width: 100%;
+  }
+
+  .frameParent {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .div,
+  .b1,
+  .b2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .frameGroup {
+    gap: 10px;
+  }
+
+  .rectangleGroup {
+    padding: 8px 16px;
   }
 }
