@@ -133,8 +133,8 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
         const bbox = land.getBBox();
         const name = land.getAttribute('data-name');
 
-        let xOffset = -20;
-        let yOffset = -30;
+        // let xOffset = -20;
+        // let yOffset = -30;
 
         // if (name === "تبوك") {
         //   xOffset = -20;
@@ -228,7 +228,7 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
                   landCenters.map((land, index) => (
                     <foreignObject key={index} x={land.x} y={land.y}>
                       <div
-                        style={rotatedCities[land.name] ? { transform: `rotate(${rotatedCities[land.name]}deg)` } : {}}
+
                         className="city-container" xmlns="http://www.w3.org/1999/xhtml" onClick={() => handleZoomToLand(index)}>
 
 
