@@ -189,16 +189,10 @@ const Frame1 = ({ societyDetails }) => {
   return (
     <>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
+
         <title>{siteName}</title>
         <meta charSet="UTF-8" />
         <link rel="icon" href="/logo.png" />
@@ -265,7 +259,9 @@ const Frame1 = ({ societyDetails }) => {
 
                 {/* Image */}
                 <div className={styles.wrapperRectangle35}>
-                  <img
+                  <Image
+                    width={312}
+                    height={312}
                     className={styles.wrapperRectangle35Child}
                     loading="lazy"
                     alt={societyDetails?.name}

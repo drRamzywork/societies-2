@@ -12,7 +12,6 @@ export default function Home({
   const siteName = `اللجنة التنسيقية لجمعيات الدعوة`;
   const imagePath = "/logo.png";
   const siteDescrription = "";
-  console.log(societiesJson, "societiesJson");
   const siteURL = "https://socites2.vercel.app ";
   const societiesArray = societiesJson?.data || [];
 
@@ -35,21 +34,9 @@ export default function Home({
     name: findClosestMatch(city.name), // استبدال الاسم بأقرب تطابق
   }));
 
-  console.log(updatedCitiesMap, "updatedCitiesMap");
-
   return (
     <>
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet"
-        />
         <title>{siteName}</title>
         <meta charSet="UTF-8" />
         <link rel="icon" href="/logo.png" />

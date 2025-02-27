@@ -5,6 +5,7 @@ import ContactFooter from "@/society/components/contact-footer";
 import styles from "./index.module.css";
 import DataGatherer from "@/society/components/data-gatherer";
 import Fotter from "@/components/society/components/fotter";
+import Image from "next/image";
 
 const Page2 = () => {
   return (
@@ -66,7 +67,13 @@ const Page2 = () => {
         </div>
       </section>
       <div className={styles.infoParent}>
-        <img className={styles.infoIcon} alt="" src="/info.svg" />
+        <Image
+          width={24}
+          height={24}
+          className={styles.infoIcon}
+          alt=""
+          src="/info.svg"
+        />
         <div className={styles.buttonsbutton4}>
           <div className={styles.text2}>
             <div className={styles.div1}>طباعه الوثيقة</div>

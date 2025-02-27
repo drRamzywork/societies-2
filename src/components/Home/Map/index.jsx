@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ErasPlacesSlider } from '@/components/ErasComponents';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Map = ({ dataAllCitiesMap, dataAllPlaces,
   dataAllPoetries }) => {
@@ -234,8 +235,7 @@ element.setAttribute('id', `land-${index}`);
                           <div className={`city-name `} id="p1">
 
                             <div id='name'>
-                         <a
-                                href='/societies'
+                         <Link href='/societies'
                                 className="details"
                               >
                                 <div className="img_container">
@@ -255,7 +255,7 @@ element.setAttribute('id', `land-${index}`);
                                   </div>
                                 </div>
 
-                              </a>                              
+                              </Link>                              
                             </div>
                           </div>
                           :
