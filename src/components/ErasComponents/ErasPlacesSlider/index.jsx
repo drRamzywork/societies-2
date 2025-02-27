@@ -93,6 +93,7 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
           direction='horizontal'
           slidesPerView={2.5}
           spaceBetween={16}
+
           dir={'rtl'}
           className="places-swiper" >
 

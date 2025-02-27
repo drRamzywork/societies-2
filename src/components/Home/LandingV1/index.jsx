@@ -35,11 +35,6 @@ const LandingV1 = ({ dataAllCitiesMap, dataAllPlaces, dataAllPoetries }) => {
       <Navbar />
       <section id='landing' className={styles.landing}>
         <div className={styles.sec_container}>
-          {/* <div className={styles.map_container}>
-              <a href="https://societies-v-1.vercel.app/map">
-                <img src="/imgs/map.svg" alt="" />
-              </a>
-            </div> */}
 
 
           <Map dataAllCitiesMap={dataAllCitiesMap} dataAllPlaces={dataAllPlaces} dataAllPoetries={dataAllPoetries} />

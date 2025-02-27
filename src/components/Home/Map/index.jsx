@@ -136,49 +136,47 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
         let xOffset = -20;
         let yOffset = -30;
 
-        if (name === "تبوك") {
-          xOffset = -20;
-          yOffset = -70;
-        } else if (name === "جازان") {
-          xOffset = -2;
-          yOffset = -2;
-        } else if (name === "عسير") {
-          xOffset = -2;
-          yOffset = -25;
-        } else if (name === "الباحة") {
-          xOffset = 0;
-          yOffset = -5;
-        } else if (name === "مكة") {
-          xOffset = 15;
-          yOffset = -25;
-        } else if (name === "المدينة المنورة") {
-          xOffset = -10;
-          yOffset = 0;
-        } else if (name === "الجوف") {
-          xOffset = -10;
-          yOffset = 0;
-        } else if (name === "الحدود الشمالية") {
-          xOffset = 10;
-          yOffset = 0;
-        } else if (name === "القصيم") {
-          xOffset = -2;
-          yOffset = -15;
-        }
-        else if (name === "المنطقة الشرقية") {
-          xOffset = -2;
-          yOffset = -15;
-        }
-        else if (name === "نجران") {
-          xOffset = -2;
-          yOffset = -2;
-        }
+        // if (name === "تبوك") {
+        //   xOffset = -20;
+        //   yOffset = -70;
+        // } else if (name === "جازان") {
+        //   xOffset = -2;
+        //   yOffset = -2;
+        // } else if (name === "عسير") {
+        //   xOffset = -2;
+        //   yOffset = -25;
+        // } else if (name === "الباحة") {
+        //   xOffset = 0;
+        //   yOffset = -5;
+        // } else if (name === "مكة") {
+        //   xOffset = 15;
+        //   yOffset = -25;
+        // } else if (name === "المدينة المنورة") {
+        //   xOffset = -10;
+        //   yOffset = 0;
+        // } else if (name === "الجوف") {
+        //   xOffset = -10;
+        //   yOffset = 0;
+        // } else if (name === "الحدود الشمالية") {
+        //   xOffset = 10;
+        //   yOffset = 0;
+        // } else if (name === "القصيم") {
+        //   xOffset = -2;
+        //   yOffset = -15;
+        // } else if (name === "المنطقة الشرقية") {
+        //   xOffset = -2;
+        //   yOffset = -15;
+        // } else if (name === "نجران") {
+        //   xOffset = -2;
+        //   yOffset = -2;
+        // }
 
 
 
 
         return {
-          x: bbox.x + bbox.width / 2 + xOffset,
-          y: bbox.y + bbox.height / 2 + yOffset,
+          x: bbox.x + bbox.width / 2,
+          y: bbox.y + bbox.height / 2,
           name: name
         };
       });
@@ -234,8 +232,6 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
                         className="city-container" xmlns="http://www.w3.org/1999/xhtml" onClick={() => handleZoomToLand(index)}>
 
 
-
-
                         {activeIndex == index ?
                           <div className={`city-name `} id="p1">
 
@@ -243,10 +239,6 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
                               <motion.a
                                 href='/societies'
                                 className="details"
-                              // initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                              // animate={{ opacity: 1, scale: 1, y: 0 }}
-                              // transition={{ duration: 0.8, ease: "easeOut" }}
-                              // viewport={{ once: true, amount: 0.2 }}
                               >
                                 <div className="img_container">
                                   <Image width={73} height={69} src={'/1.png'} alt={"1"} />
@@ -271,8 +263,6 @@ const Map = ({ dataAllCitiesMap, dataAllPlaces,
                           :
                           <div className={`city-name `} id="p1">
                             <div id='name'>
-
-
                               <p>
                                 {land.name}
                               </p>
