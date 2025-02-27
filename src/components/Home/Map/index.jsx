@@ -234,7 +234,7 @@ element.setAttribute('id', `land-${index}`);
                           <div className={`city-name `} id="p1">
 
                             <div id='name'>
-                              {/* <a
+                         <a
                                 href='/societies'
                                 className="details"
                               >
@@ -255,8 +255,7 @@ element.setAttribute('id', `land-${index}`);
                                   </div>
                                 </div>
 
-                              </a> */}
-                              test
+                              </a>                              
                             </div>
                           </div>
                           :
