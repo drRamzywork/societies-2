@@ -134,50 +134,50 @@ element.setAttribute('id', `land-${index}`);
         const bbox = land.getBBox();
         const name = land.getAttribute('data-name');
 
-        // let xOffset = -20;
-        // let yOffset = -30;
+        let xOffset = -20;
+        let yOffset = -30;
 
-        // if (name === "تبوك") {
-        //   xOffset = -20;
-        //   yOffset = -70;
-        // } else if (name === "جازان") {
-        //   xOffset = -2;
-        //   yOffset = -2;
-        // } else if (name === "عسير") {
-        //   xOffset = -2;
-        //   yOffset = -25;
-        // } else if (name === "الباحة") {
-        //   xOffset = 0;
-        //   yOffset = -5;
-        // } else if (name === "مكة") {
-        //   xOffset = 15;
-        //   yOffset = -25;
-        // } else if (name === "المدينة المنورة") {
-        //   xOffset = -10;
-        //   yOffset = 0;
-        // } else if (name === "الجوف") {
-        //   xOffset = -10;
-        //   yOffset = 0;
-        // } else if (name === "الحدود الشمالية") {
-        //   xOffset = 10;
-        //   yOffset = 0;
-        // } else if (name === "القصيم") {
-        //   xOffset = -2;
-        //   yOffset = -15;
-        // } else if (name === "المنطقة الشرقية") {
-        //   xOffset = -2;
-        //   yOffset = -15;
-        // } else if (name === "نجران") {
-        //   xOffset = -2;
-        //   yOffset = -2;
-        // }
+        if (name === "تبوك") {
+          xOffset = -40;
+          yOffset = -40;
+        } else if (name === "جازان") {
+          xOffset = -2;
+          yOffset = -2;
+        } else if (name === "عسير") {
+          xOffset = -2;
+          yOffset = -25;
+        } else if (name === "الباحة") {
+          xOffset = 0;
+          yOffset = -5;
+        } else if (name === "مكة") {
+          xOffset = 15;
+          yOffset = -25;
+        } else if (name === "المدينة المنورة") {
+          xOffset = -10;
+          yOffset = 0;
+        } else if (name === "الجوف") {
+          xOffset = -10;
+          yOffset = 0;
+        } else if (name === "الحدود الشمالية") {
+          xOffset = 10;
+          yOffset = 0;
+        } else if (name === "القصيم") {
+          xOffset = -2;
+          yOffset = -15;
+        } else if (name === "المنطقة الشرقية") {
+          xOffset = -2;
+          yOffset = -15;
+        } else if (name === "نجران") {
+          xOffset = -2;
+          yOffset = -2;
+        }
 
 
 
 
         return {
-          x: bbox.x + bbox.width / 2,
-          y: bbox.y + bbox.height / 2,
+          x: bbox.x + bbox.width / 2 + xOffset,
+          y: bbox.y + bbox.height / 2 + yOffset,
           name: name
         };
       });

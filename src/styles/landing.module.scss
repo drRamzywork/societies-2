@@ -15,6 +15,9 @@ section.landing {
     width: 100%;
     margin-top: 84px;
     margin-bottom: 84px;
+    @media screen and (max-width: 450px) {
+      margin-bottom: 0px;
+    }
     .map_container {
       width: 450px;
       height: 250px;

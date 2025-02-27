@@ -53,13 +53,7 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
     }
   }
 
-  const adjustImageUrl = (imageUrl) => {
-    if (imageUrl?.startsWith('https')) {
-      return imageUrl;
-    } else {
-      return `https://zamakan.suwa.io${imageUrl}`;
-    }
-  };
+
 
   const handleImageLoad = cityId => {
     setImageLoadingStates(prev => ({ ...prev, [cityId]: false }));
@@ -81,54 +75,32 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-
+  console.log(places, "filteredPlaces")
 
   return (
     <>
+
       {isMobileView === true && <div className={styles.swiper_container} dir='rtl'>
         <Swiper
           ref={swiperRef}
-          centeredSlides={true}
-          onSlideChange={handleSlideChange}
-          direction='horizontal'
-          slidesPerView={2.5}
-          spaceBetween={16}
-
+          centeredSlides={false}
+          direction="horizontal"
+          slidesPerView={'auto'}  // ✅ Use 'auto' to allow proper scrolling
+          spaceBetween={8}
+          loop={true}  // ✅ Fixes disappearing issue
+          autoplay={{
+            delay: 3000,  // ✅ Auto-scroll every 3 seconds
+            disableOnInteraction: false,
+          }}
           dir={'rtl'}
-          className="places-swiper" >
+          className={styles.horizontal_swiper}
+        >
 
           {filteredPlaces?.map((city, index) =>
 
 
-
-
-            <SwiperSlide className={styles.places_container} key={city.id1} >
+            <SwiperSlide className={styles.places_container} key={index} >
               <div className={`${styles.places} ${city.id === activeCity ? styles.active : ''}`}>
-                {/* <div className={styles.img_container} onClick={() => onPlaceClick(city.id)}>
-    {imageLoadingStates[city.id] && (
-      <RotatingLines
-        strokeColor="grey"
-        strokeWidth="5"
-        animationDuration="0.75"
-        width="96"
-        visible={true}
-
-      />
-    )}
-
-    <img
-      style={{ display: imageLoadingStates[city.id] ? 'none' : 'block' }}
-      src={'/imgs/bg/3.jpg'}
-      alt={city?.name}
-      onLoad={() => handleImageLoad(city.id)}
-    />
-
-  </div>
-  <div className={styles.name}>
-    <p>{city.name}</p>
-  </div> */}
-
-
                 <Link href='/society/22' target='_blank' className={styles.box}>
                   <div className={styles.img_container}>
                     {imageLoadingStates[city.id] && (
@@ -147,6 +119,7 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
                       src={'/imgs/bg/3.jpg'}
                       alt={city?.name}
                       onLoad={() => handleImageLoad(city.id)}
+                      loading="lazy"
                     />
 
 
@@ -173,6 +146,7 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
           }
         </Swiper>
       </div >}
+
 
       {isMobileView === false && <div className={styles.swiper_container} dir='rtl'>
         <Swiper
