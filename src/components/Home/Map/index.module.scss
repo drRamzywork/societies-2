@@ -5,6 +5,9 @@
   z-index: 222;
   top: 114px;
   z-index: 1;
+  @media screen and (max-width: 992px) {
+    top: 80px;
+  }
   .layer {
     position: absolute;
     top: 0;

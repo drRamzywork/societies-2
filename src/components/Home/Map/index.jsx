@@ -198,7 +198,6 @@ element.setAttribute('id', `land-${index}`);
     <>
       <section id='Places' className={styles.Places} dir={`${router.locale === 'ar' ? 'rtl' : 'ltr'}`}>
 
-        <div className="container">
 
           {cityData && (
             <div className={styles.layer} />
@@ -297,7 +296,6 @@ element.setAttribute('id', `land-${index}`);
             }
 
           </div>
-        </div>
 
 
       </section >
