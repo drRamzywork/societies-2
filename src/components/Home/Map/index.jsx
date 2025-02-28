@@ -237,10 +237,11 @@ element.setAttribute('id', `land-${index}`);
                          <Link href='/societies'
                                 className="details"
                               >
-                                <div className="img_container">
-                                  <Image width={73} height={69} src={'/1.png'} alt={"1"} />
 
-                                </div>
+
+                                
+
+
                                 <div className="text_container">
                                   <div className="title">
                                     <p>عدد الجمعيات</p>

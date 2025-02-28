@@ -729,7 +729,7 @@ foreignObject {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 197px;
+    // width: 197px;
     box-shadow: 5.71px 5.71px 22.84px 0px #00000040;
     box-shadow: 0px 4.57px 4.57px 0px #0000001a inset;
     border-radius: 9.13px;
@@ -763,11 +763,17 @@ foreignObject {
       justify-content: flex-start;
       .title {
         p {
+          text-align: right;
           margin: 0;
           font-size: 18.84px;
           font-weight: 400;
           color: #aaaaaa;
           padding: 0;
+
+          white-space: nowrap; // ✅ Prevents text from wrapping
+          overflow: hidden; // ✅ Hides overflow text
+          text-overflow: ellipsis; // ✅ Adds "..." if text is too long
+          display: block; // ✅ Ensures proper rendering
         }
       }
       hr {
