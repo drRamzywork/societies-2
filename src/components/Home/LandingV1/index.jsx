@@ -11,7 +11,6 @@ import Map from '@/components/Home/Map';
 
 // import required modules
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-import Button from '@/components/Utils/Button';
 import { motion } from 'framer-motion';
 
 const LandingV1 = ({ dataAllCitiesMap, dataAllPlaces, dataAllPoetries }) => {

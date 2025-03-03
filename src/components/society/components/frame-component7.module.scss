@@ -830,6 +830,11 @@
   width: 100%;
   max-width: 1141px;
 }
+.frameParent5 {
+  @media screen and (max-width: 992px) {
+    justify-content: center;
+  }
+}
 
 .frameWrapper1 {
   width: 100%;
@@ -881,6 +886,10 @@
   }
   .frameParent1 {
     flex-wrap: wrap;
+
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
   }
 }
 

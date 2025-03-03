@@ -27,7 +27,6 @@ const BlurFilter = ({ societyDetails }) => {
                   </div>
                   <div className={styles.alCommunitygmailcomParent}>
                     <div className={styles.alCommunitygmailcom}>
-                      Al-community@gmail.com
                       {societyDetails?.email}
                     </div>
                     <div className={styles.communicationWrapper}>
@@ -41,7 +40,10 @@ const BlurFilter = ({ societyDetails }) => {
                   </div>
                   <div className={styles.dropShadowFilter1}>
                     <div className={styles.parent}>
-                      <div className={styles.div2}>+20232323121</div>
+                      <div className={styles.div2}>
+                        {" "}
+                        {societyDetails.phone ? societyDetails.phone : "-"}
+                      </div>
                       <div className={styles.devicesWrapper}>
                         <img
                           className={styles.devicesIcon}

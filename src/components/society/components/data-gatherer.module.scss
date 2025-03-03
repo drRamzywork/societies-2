@@ -184,6 +184,25 @@
   justify-content: flex-start;
   padding: var(--padding-5xs);
   box-sizing: border-box;
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+
+.burger_menu {
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+  button {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .button {
@@ -282,5 +301,83 @@
 @media screen and (max-width: 450px) {
   .dataGatherer {
     padding-left: var(--padding-xl);
+  }
+}
+
+.layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(16px);
+
+  .menu_container {
+    width: 80%;
+    background-color: #2660a2b3;
+    height: 100%;
+    padding-top: 24px;
+    border-top-left-radius: 24px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 36px;
+      li {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        a {
+          margin: 0;
+          text-decoration: none;
+
+          color: #ffff;
+          font-size: 22px;
+          font-weight: 500;
+          border-bottom: 1px solid transparent;
+          transition: color 0.3s ease-in-out,
+            border-bottom-color 0.3s ease-in-out;
+
+          &:hover {
+            color: #f6e2ec;
+            border-bottom-color: #f6e2ec;
+          }
+
+          &.active {
+            color: #f6e2ec;
+            border-bottom-color: #f6e2ec;
+          }
+        }
+
+        &.active {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .btn_container {
+      width: 100%;
+      display: flex;
+      margin-top: 24px;
+      color: unset;
+      text-decoration: none;
+      button {
+        margin: auto;
+        border: none;
+        background-color: var(--background);
+        border-radius: 8px;
+        box-shadow: 0px 1px 2px 0px #c6e4f60d;
+        padding: 8px 16px;
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+      }
+    }
   }
 }

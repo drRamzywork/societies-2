@@ -320,7 +320,7 @@ const Frame1 = ({ societyDetails }) => {
             </div>
 
             {/* Other Components */}
-            <FrameComponent7 />
+            <FrameComponent7 societyDetails={societyDetails} />
           </section>
         </main>
 
