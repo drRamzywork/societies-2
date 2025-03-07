@@ -2,7 +2,6 @@ import FrameComponent8 from "./frame-component8";
 import styles from "./frame-component7.module.scss";
 
 const FrameComponent7 = ({ societyDetails }) => {
-  console.log(societyDetails, "societyDetails");
   return (
     <div className={styles.rectangleParent}>
       <div className={styles.systemParent}>

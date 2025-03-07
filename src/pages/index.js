@@ -16,59 +16,25 @@ export default function Home({
   const siteURL = "https://socites2.vercel.app ";
   const societiesArray = societiesJson?.data || [];
 
-  // const regions = societiesArray.map((so) => so.region);
-  // const uniqueRegions = Array.from(
-  //   new Map(regions.map((region) => [region.id, region])).values()
-  // );
-
-  // const findClosestMatch = (cityName) => {
-  //   for (let region of uniqueRegions) {
-  //     if (region.name.includes(cityName) || cityName.includes(region.name)) {
-  //       return region.name;
-  //     }
-  //   }
-  //   return cityName;
-  // };
-
-  // const updatedCitiesMap = dataAllCitiesMap.map((city) => ({
-  //   ...city,
-  //   name: findClosestMatch(city.name), // استبدال الاسم بأقرب تطابق
-  //   societies_count: city.societies_count, // استبدال الاسم بأقرب تطابق
-  // }));
-
-  // console.log(updatedCitiesMap, "updatedCitiesMap");
-
-  // Step 1: Extract regions with societies_count
-  // Step 1: Extract regions with id and societies_count
-  // استخدم البيانات الجديدة مباشرة
-  // استخدام البيانات الجديدة مباشرة
-  // const updatedCitiesMap = dataAllCitiesMap.map((city, index) => ({
-  //   ...city,
-  //   id: regionsData[index]?.id || city.id, // تحديث id
-  //   name:
-  //     regionsData[index]?.name.replace(/^(منطقة|المنطقة)\s*/, "") || city.name, // إزالة "منطقة" أو "المنطقة" من البداية
-  // }));
-
-  // console.log(updatedCitiesMap, "updatedCitiesMap");
-
   const regionMap = new Map(
     regionsData.map((region) => [
       region.id,
-      { name: region.name, societies_count: region.societies_count },
+      {
+        name: region.name.replace(/^(منطقة|المنطقة)\s*/, ""),
+        societies_count: region.societies_count,
+      },
     ])
   );
 
   const updatedCitiesMap = dataAllCitiesMap.map((city) => {
-    const region = regionMap.get(city.id); // جلب البيانات من regionsData
+    const region = regionMap.get(city.id); // البحث مباشرةً باستخدام id
+
     return {
       ...city,
-      id: city.id, // الحفاظ على ID كما هو
-      name: region?.name.replace(/^(منطقة|المنطقة)\s*/, "") || city.name, // تحديث الاسم بعد إزالة "منطقة" أو "المنطقة"
-      societies_count: region?.societies_count || 0, // تحديث عدد الجمعيات
+      name: region?.name || city.name, // تحديث الاسم عند وجود تطابق
+      societies_count: region?.societies_count ?? city.societies_count ?? 0, // تحديث عدد الجمعيات
     };
   });
-
-  console.log(dataAllPlaces, "dataAllPlaces");
 
   return (
     <>

@@ -36,7 +36,7 @@ const LandingV1 = ({ dataAllCitiesMap, dataAllPlaces, dataAllPoetries }) => {
         <div className={styles.sec_container}>
 
 
-          <Map dataAllCitiesMap={dataAllCitiesMap} dataAllPlaces={dataAllPlaces} dataAllPoetries={dataAllPoetries} />
+          <Map dataAllCitiesMap={dataAllCitiesMap} dataAllPlaces={dataAllPlaces} dataAllPoetries={dataAllPlaces} />
 
 
 

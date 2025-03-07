@@ -12,7 +12,7 @@ import Link from 'next/link';
 const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
   const swiperRef = useRef(null);
   const swiperVerticalRef = useRef(null);
-  const filteredPlaces = places?.filter(place => place.svgX !== null && place.svgY !== null);
+  const filteredPlaces = places;
 
 
   const [imageLoadingStates, setImageLoadingStates] = useState(
@@ -75,7 +75,6 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  console.log(places, "filteredPlaces")
 
   return (
     <>
@@ -142,49 +141,7 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
           }
         </Swiper>
       </div >}
-      {/* {isMobileView === true && <div className={styles.swiper_container} dir='rtl'>
-        <Swiper
-          ref={swiperRef}
-          centeredSlides={true}
-          onSlideChange={handleSlideChange}
-          direction='horizontal'
-          slidesPerView={2.5}
-          spaceBetween={16}
-          dir={'rtl'}
-          className="places-swiper" >
 
-          {filteredPlaces?.map((city, index) =>
-            <SwiperSlide className={styles.places_container} key={city.id} >
-              <div className={`${styles.places} ${city.id === activeCity ? styles.active : ''}`} >
-                <div className={styles.img_container} onClick={() => onPlaceClick(city.id)}>
-                  {imageLoadingStates[city?.id] && (
-                    <RotatingLines
-                      strokeColor="grey"
-                      strokeWidth="5"
-                      animationDuration="0.75"
-                      width="96"
-                      visible={true}
-
-                    />
-                  )}
-
-                  <img
-                    style={{ display: imageLoadingStates[city.id] ? 'none' : 'block' }}
-                    src={'/imgs/bg/3.jpg'}
-                    alt={city?.name}
-                    onLoad={() => handleImageLoad(city.id)}
-                  />
-
-                </div>
-                <div className={styles.name}>
-                  <p>{city.name}</p>
-                </div>
-              </div>
-            </SwiperSlide>
-          )
-          }
-        </Swiper>
-      </div >} */}
 
       {isMobileView === false && <div className={styles.swiper_container} dir='rtl'>
         <Swiper
@@ -192,40 +149,6 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
           onSlideChange={handleSlideChange}
           direction={"vertical"}
           breakpoints={{
-            // 300: {
-            //   slidesPerView: 1.8,
-            //   spaceBetween: 10,
-            // },
-            // 400: {
-            //   slidesPerView: 2.1,
-            //   spaceBetween: 10,
-            // },
-            // 414: {
-            //   slidesPerView: 2.5,
-            //   spaceBetween: 11,
-            // },
-            // 450: {
-
-
-            //   slidesPerView: 2.5,
-            //   spaceBetween: 11,
-            // },
-            // 640: {
-
-
-            //   slidesPerView: 2.5,
-            //   spaceBetween: 10,
-            // },
-            // 768: {
-
-
-            //   slidesPerView: 2.5,
-            //   spaceBetween: 10,
-            // },
-            // 1204: {
-            //   slidesPerView: 2.5,
-            //   spaceBetween: 16,
-            // },
 
             1: {
               slidesPerView: 1.5,
@@ -295,13 +218,13 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
 
 
                     <div className={styles.title} >
-                      <h3 > جمعية الرياض العامة </h3>
+                      <h3 >{city?.name}</h3>
                     </div>
                   </div>
 
                   <div className={styles.text_container}>
                     <div className={styles.desc}>
-                      <p> جمعية متخصصة في رعاية الشباب       </p>
+                      <p>{city?.desc}    </p>
                     </div>
 
                     <div className={styles.button_container}>
