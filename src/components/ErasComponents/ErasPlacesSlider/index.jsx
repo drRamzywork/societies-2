@@ -119,13 +119,13 @@ const ErasPlacesSlider = ({ places, activeCity, setActiveCity }) => {
 
 
                     <div className={styles.title} >
-                      <h3 > جمعية الرياض العامة </h3>
+                      <h3 >{city?.name}</h3>
                     </div>
                   </div>
 
                   <div className={styles.text_container}>
                     <div className={styles.desc}>
-                      <p> جمعية متخصصة في رعاية الشباب       </p>
+                      <p> {city?.desc}     </p>
                     </div>
 
                     <div className={styles.button_container}>
