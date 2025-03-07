@@ -178,19 +178,13 @@ element.setAttribute('id', `land-${index}`);
         return {
           x: bbox.x + bbox.width / 2 + xOffset,
           y: bbox.y + bbox.height / 2 + yOffset,
-          name: name
+          name: name,
         };
       });
       setLandCenters(centers);
     }
   }, []);
 
-  const rotatedCities = {
-    "الحدود الشمالية": 19,
-    "المنطقة الشرقية": 25,
-    "مكة": -10,
-    "المدينة": 30,
-  };
 
 
 
@@ -239,9 +233,11 @@ element.setAttribute('id', `land-${index}`);
                               >
 
 
+<div className="img_container">
+                                  <Image src={'/1.png'} width={80} height={80}/>
+
+                                </div>
                                 
-
-
                                 <div className="text_container">
                                   <div className="title">
                                     <p>عدد الجمعيات</p>
@@ -250,10 +246,11 @@ element.setAttribute('id', `land-${index}`);
                                   <hr />
                                   <div className="desc">
                                     <p>
-                                      جمعية  <span>15</span>
+                                      جمعية  <span>{dataAllCitiesMap[index]?.societies_count}</span>
                                     </p>
                                   </div>
                                 </div>
+
 
                               </Link>                              
                             </div>

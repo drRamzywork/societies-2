@@ -8,6 +8,7 @@ export default function Home({
   dataAllPlaces,
   dataAllPoetries,
   societiesJson,
+  regionsData,
 }) {
   const siteName = `اللجنة التنسيقية لجمعيات الدعوة`;
   const imagePath = "/logo.png";
@@ -15,24 +16,59 @@ export default function Home({
   const siteURL = "https://socites2.vercel.app ";
   const societiesArray = societiesJson?.data || [];
 
-  const regions = societiesArray.map((so) => so.region);
-  const uniqueRegions = Array.from(
-    new Map(regions.map((region) => [region.id, region])).values()
+  // const regions = societiesArray.map((so) => so.region);
+  // const uniqueRegions = Array.from(
+  //   new Map(regions.map((region) => [region.id, region])).values()
+  // );
+
+  // const findClosestMatch = (cityName) => {
+  //   for (let region of uniqueRegions) {
+  //     if (region.name.includes(cityName) || cityName.includes(region.name)) {
+  //       return region.name;
+  //     }
+  //   }
+  //   return cityName;
+  // };
+
+  // const updatedCitiesMap = dataAllCitiesMap.map((city) => ({
+  //   ...city,
+  //   name: findClosestMatch(city.name), // استبدال الاسم بأقرب تطابق
+  //   societies_count: city.societies_count, // استبدال الاسم بأقرب تطابق
+  // }));
+
+  // console.log(updatedCitiesMap, "updatedCitiesMap");
+
+  // Step 1: Extract regions with societies_count
+  // Step 1: Extract regions with id and societies_count
+  // استخدم البيانات الجديدة مباشرة
+  // استخدام البيانات الجديدة مباشرة
+  // const updatedCitiesMap = dataAllCitiesMap.map((city, index) => ({
+  //   ...city,
+  //   id: regionsData[index]?.id || city.id, // تحديث id
+  //   name:
+  //     regionsData[index]?.name.replace(/^(منطقة|المنطقة)\s*/, "") || city.name, // إزالة "منطقة" أو "المنطقة" من البداية
+  // }));
+
+  // console.log(updatedCitiesMap, "updatedCitiesMap");
+
+  const regionMap = new Map(
+    regionsData.map((region) => [
+      region.id,
+      { name: region.name, societies_count: region.societies_count },
+    ])
   );
 
-  const findClosestMatch = (cityName) => {
-    for (let region of uniqueRegions) {
-      if (region.name.includes(cityName) || cityName.includes(region.name)) {
-        return region.name;
-      }
-    }
-    return cityName;
-  };
+  const updatedCitiesMap = dataAllCitiesMap.map((city) => {
+    const region = regionMap.get(city.id); // جلب البيانات من regionsData
+    return {
+      ...city,
+      id: city.id, // الحفاظ على ID كما هو
+      name: region?.name.replace(/^(منطقة|المنطقة)\s*/, "") || city.name, // تحديث الاسم بعد إزالة "منطقة" أو "المنطقة"
+      societies_count: region?.societies_count || 0, // تحديث عدد الجمعيات
+    };
+  });
 
-  const updatedCitiesMap = dataAllCitiesMap.map((city) => ({
-    ...city,
-    name: findClosestMatch(city.name), // استبدال الاسم بأقرب تطابق
-  }));
+  console.log(dataAllPlaces, "dataAllPlaces");
 
   return (
     <>
@@ -90,7 +126,7 @@ export default function Home({
       </Head>
 
       <LandingV1
-        dataAllCitiesMap={dataAllCitiesMap}
+        dataAllCitiesMap={updatedCitiesMap}
         dataAllPlaces={dataAllPlaces}
         dataAllPoetries={dataAllPoetries}
       />
@@ -110,6 +146,8 @@ export async function getStaticProps() {
 
   const response = await fetch("https://map.rmz.one/api/list-societies");
   const societiesJson = await response.json();
+  const regionsRes = await fetch("https://map.rmz.one/api/get-regions");
+  const regionsData = await regionsRes.json();
 
   try {
     dataAllPlaces = JSON.parse(
@@ -129,6 +167,7 @@ export async function getStaticProps() {
         dataAllPlaces: [],
         dataAllPoetries: [],
         dataAllCitiesMap: [],
+        regionsData: [],
         error: error.message,
       },
       revalidate: 10,
@@ -141,6 +180,7 @@ export async function getStaticProps() {
       dataAllPoetries,
       dataAllCitiesMap,
       societiesJson: societiesJson?.data,
+      regionsData: regionsData?.data?.data,
     },
     revalidate: 10,
   };
